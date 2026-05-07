@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InstaDispatch – Delivery Management Software for Courier & Logistics</title>
+<meta name="description" content="InstaDispatch is a cloud-based delivery management software. Automate dispatch, optimize routes, track drivers in real-time, manage ePOD, and reduce delivery costs. Book a free demo today.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.instadispatch.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="InstaDispatch – Delivery Management Software">
+<meta property="og:description" content="Automate dispatch, optimize routes, track deliveries & manage ePOD from one powerful platform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.instadispatch.com/">
+<meta property="og:image" content="https://www.instadispatch.com/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Schema: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "InstaDispatch",
+  "url": "https://www.instadispatch.com",
+  "logo": "https://www.instadispatch.com/logo.png",
+  "description": "Cloud-based delivery management software for courier, logistics and last-mile delivery businesses.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+44-203-890-3158",
+    "contactType": "sales",
+    "email": "info@instadispatch.com",
+    "availableLanguage": ["English","Spanish","Arabic","Portuguese"]
+  }
+}
+</script>
+
+<!-- Schema: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "InstaDispatch",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "Delivery management software with automated dispatch, route optimization, real-time driver tracking, ePOD and analytics.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150"
+  }
+}
+</script>
+
+<!-- Schema: HowTo -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to get started with InstaDispatch",
+  "step": [
+    {"@type":"HowToStep","name":"Sign Up & Configure","text":"Create your account, add drivers, set delivery zones and pricing rules."},
+    {"@type":"HowToStep","name":"Dispatch & Optimize","text":"Auto-assign orders to nearest drivers and generate optimized routes."},
+    {"@type":"HowToStep","name":"Track & Deliver","text":"Track deliveries in real-time and capture digital proof of delivery."}
+  ]
+}
+</script>
+
+<!-- Schema: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is InstaDispatch?","acceptedAnswer":{"@type":"Answer","text":"InstaDispatch is a cloud-based delivery management software for courier, logistics and last-mile delivery businesses."}},
+    {"@type":"Question","name":"How do I get an account?","acceptedAnswer":{"@type":"Answer","text":"You can book a demo or contact our sales team to set up your account."}},
+    {"@type":"Question","name":"Does Instadispatch Mobile App work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes, the driver app supports offline mode and syncs once connectivity is restored."}},
+    {"@type":"Question","name":"Which platform does the Driver App support?","acceptedAnswer":{"@type":"Answer","text":"The InstaDispatch Driver App is available on Android and iOS."}}
+  ]
+}
+</script>
+
+<style>
+/* ---------- RESET ---------- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  color:#1a1a2e;
+  background:#fff;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+:root{
+  --primary:#2D1B69;
+  --primary-light:#4B2FA8;
+  --accent:#FF6B5B;
+  --accent-dark:#e85a4b;
+  --bg-soft:#F5F2FF;
+  --bg-light:#FAFAFC;
+  --text:#1a1a2e;
+  --text-muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:14px;
+  --shadow:0 8px 30px rgba(45,27,105,0.08);
+  --shadow-lg:0 20px 50px rgba(45,27,105,0.12);
+}
+
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;color:var(--primary);font-weight:800;line-height:1.2}
+h1{font-size:clamp(2rem,4.5vw,3.5rem)}
+h2{font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:1rem}
+h3{font-size:1.25rem;margin-bottom:.5rem}
+p{color:var(--text-muted);font-size:1rem}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:14px 28px;border-radius:10px;font-weight:600;font-size:15px;
+  transition:all .3s ease;cursor:pointer;border:none;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(255,107,91,.3)}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 12px 25px rgba(255,107,91,.4)}
+.btn-secondary{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.btn-secondary:hover{background:var(--primary);color:#fff}
+.btn-white{background:#fff;color:var(--primary)}
+.btn-white:hover{background:var(--bg-soft)}
+
+/* ---------- NAVBAR ---------- */
+.navbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.5rem;color:var(--primary)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-weight:500;color:var(--text);transition:color .3s}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{display:flex;gap:12px;align-items:center}
+.menu-toggle{display:none;font-size:1.5rem;background:none;border:none;cursor:pointer;color:var(--primary)}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:linear-gradient(135deg,#F5F2FF 0%,#fff 100%);
+  padding:80px 0 100px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;top:-100px;right:-100px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,107,91,.15) 0%,transparent 70%);
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero h1{margin-bottom:20px}
+.hero h1 .highlight{
+  background:linear-gradient(120deg,var(--accent),#FFA07A);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p.lead{font-size:1.125rem;margin-bottom:32px;max-width:540px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.trust-line{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem;color:var(--text-muted)}
+.trust-line span{display:flex;align-items:center;gap:6px}
+.trust-line span::before{content:"✓";color:#10b981;font-weight:700}
+.hero-visual{
+  background:#fff;border-radius:20px;padding:30px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+}
+.hero-visual img{border-radius:12px}
+.floating-stat{
+  position:absolute;background:#fff;padding:14px 18px;
+  border-radius:12px;box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:10px;
+  font-size:.85rem;font-weight:600;
+}
+.floating-stat.s1{top:-15px;left:-15px}
+.floating-stat.s2{bottom:-15px;right:-15px}
+.floating-stat .dot{width:10px;height:10px;border-radius:50%;background:#10b981}
+
+/* ---------- TRUSTED BAR ---------- */
+.trusted{background:#fff;padding:50px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.trusted h2{font-size:1rem;text-align:center;color:var(--text-muted);font-weight:600;margin-bottom:30px;letter-spacing:1px;text-transform:uppercase}
+.logo-strip{display:flex;justify-content:space-around;align-items:center;gap:40px;flex-wrap:wrap;opacity:.7}
+.logo-strip .logo-item{
+  font-weight:700;color:#777;font-size:1.1rem;
+  padding:10px 16px;border-radius:8px;background:#f3f3f8;
+}
+
+/* ---------- ABOUT (What is) ---------- */
+.about{background:var(--bg-light)}
+.about-wrap{max-width:900px;margin:0 auto;text-align:center}
+.about p{font-size:1.125rem;margin:20px auto 32px;color:#444}
+.capability-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.cap-item{
+  background:#fff;padding:22px;border-radius:12px;
+  border:1px solid var(--border);font-weight:600;
+  transition:all .3s;
+}
+.cap-item:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--accent)}
+.cap-item .ico{font-size:1.8rem;margin-bottom:10px}
+
+/* ---------- BUILT FOR ---------- */
+.builtfor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.builtfor-card{
+  background:#fff;padding:30px;border-radius:var(--radius);
+  border:1px solid var(--border);transition:all .3s;
+}
+.builtfor-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--accent)}
+.builtfor-card .ico{
+  width:50px;height:50px;border-radius:12px;
+  background:var(--bg-soft);display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;margin-bottom:16px;color:var(--primary);
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.how{background:var(--bg-soft)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px;position:relative}
+.how-step{
+  background:#fff;padding:32px;border-radius:var(--radius);
+  text-align:center;box-shadow:var(--shadow);position:relative;
+}
+.how-step .num{
+  width:50px;height:50px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:1.25rem;margin:0 auto 18px;
+}
+
+/* ---------- FEATURES ---------- */
+.section-head{text-align:center;max-width:700px;margin:0 auto 50px}
+.section-head p{font-size:1.05rem;margin-top:10px}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.feature-block{
+  background:#fff;padding:28px;border-radius:var(--radius);
+  border:1px solid var(--border);
+}
+.feature-block h3{color:var(--primary);font-size:1.1rem;margin-bottom:14px;text-align:center}
+.feature-block ul li{
+  padding:10px 0;border-bottom:1px solid #f0f0f5;
+  display:flex;align-items:center;gap:10px;font-size:.95rem;color:#444;
+}
+.feature-block ul li:last-child{border:0}
+.feature-block ul li::before{content:"›";color:var(--accent);font-weight:700;font-size:1.2rem}
+
+/* ---------- KEY FEATURES (Detailed) ---------- */
+.keyfeat{background:var(--bg-light)}
+.kf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.kf-card{
+  background:#fff;padding:28px;border-radius:var(--radius);
+  border:1px solid var(--border);transition:all .3s;
+}
+.kf-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.kf-card .ico{
+  width:48px;height:48px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),#ff8c7a);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;margin-bottom:16px;
+}
+
+/* ---------- WHY CHOOSE ---------- */
+.why{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);color:#fff}
+.why h2{color:#fff;text-align:center}
+.why .section-head p{color:rgba(255,255,255,.85)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.why-card{
+  background:rgba(255,255,255,.08);padding:28px;border-radius:var(--radius);
+  border:1px solid rgba(255,255,255,.15);
+  backdrop-filter:blur(10px);
+}
+.why-card h3{color:#fff;margin-bottom:10px}
+.why-card p{color:rgba(255,255,255,.8)}
+.why-card .ico{font-size:2rem;margin-bottom:12px}
+
+/* ---------- INDUSTRIES ---------- */
+.industries-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.ind-card{
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:all .3s;background:#fff;
+}
+.ind-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.ind-img{height:200px;background:linear-gradient(135deg,#FFE5DF,#FFD3CC);display:flex;align-items:center;justify-content:center;font-size:4rem}
+.ind-card h3{padding:20px;text-align:center;font-size:1.05rem}
+
+/* ---------- INTEGRATIONS ---------- */
+.integrations{background:var(--bg-light)}
+.tab-row{display:flex;justify-content:center;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.tab{
+  padding:12px 24px;border-radius:8px;font-weight:600;cursor:pointer;
+  color:var(--text-muted);border:2px solid transparent;
+}
+.tab.active{color:var(--primary);border-color:var(--accent);background:#fff}
+.integration-logos{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:20px;
+}
+.int-logo{
+  background:#fff;padding:24px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#666;border:1px solid var(--border);
+  transition:all .3s;
+}
+.int-logo:hover{transform:scale(1.05);box-shadow:var(--shadow)}
+
+/* ---------- STATS ---------- */
+.stats{background:var(--primary);color:#fff}
+.stats h2{color:#fff;text-align:center;margin-bottom:50px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stat-item{text-align:center}
+.stat-num{font-size:3rem;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;background:linear-gradient(120deg,#fff,#FFD3CC);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:1rem;color:rgba(255,255,255,.85);margin-top:6px}
+
+/* ---------- BRANDS ---------- */
+.brands{background:var(--bg-soft)}
+.brands-text{text-align:center;max-width:800px;margin:0 auto 40px}
+.brand-row{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.brand-card{
+  background:#fff;padding:24px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#555;box-shadow:var(--shadow);
+  min-height:100px;
+}
+
+/* ---------- APP ---------- */
+.app-section{background:linear-gradient(135deg,#fff 0%,var(--bg-soft) 100%)}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.app-visual{
+  background:linear-gradient(135deg,var(--primary),var(--primary-light));
+  border-radius:24px;padding:60px;text-align:center;color:#fff;
+  font-size:6rem;
+}
+.app-content h2{margin-bottom:20px}
+.app-content h3{color:var(--accent);font-size:1.1rem;margin-top:24px}
+.app-buttons{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.app-btn{
+  background:var(--primary);color:#fff;padding:12px 22px;
+  border-radius:10px;font-weight:600;font-size:.9rem;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.app-btn:hover{background:var(--primary-light)}
+
+/* ---------- CONTACT CTA ---------- */
+.contact-cta{
+  background:linear-gradient(135deg,var(--primary) 0%,#3D2580 100%);
+  color:#fff;
+}
+.cta-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.contact-cta h2{color:#fff;font-size:2.25rem}
+.contact-cta p{color:rgba(255,255,255,.85);margin:16px 0 28px;font-size:1.05rem}
+.cta-buttons{display:flex;gap:14px;flex-wrap:wrap}
+.cta-image{font-size:8rem;text-align:center}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:800px;margin:40px auto 0}
+.faq-item{
+  background:#fff;border:1px solid var(--border);
+  border-radius:12px;margin-bottom:14px;overflow:hidden;
+  transition:all .3s;
+}
+.faq-q{
+  padding:20px 24px;cursor:pointer;display:flex;
+  justify-content:space-between;align-items:center;
+  font-weight:600;color:var(--primary);
+}
+.faq-q .plus{font-size:1.5rem;color:var(--accent);transition:transform .3s}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;
+  padding:0 24px;color:var(--text-muted);
+}
+.faq-item.active .faq-a{max-height:300px;padding:0 24px 20px}
+.faq-item.active .plus{transform:rotate(45deg)}
+
+/* ---------- BLOG ---------- */
+.blog{background:var(--bg-light)}
+.blog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;flex-wrap:wrap;gap:20px}
+.blog-head h2{margin:0}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.blog-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:all .3s;
+}
+.blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.blog-img{height:200px;background:linear-gradient(135deg,#dde,#bcd);display:flex;align-items:center;justify-content:center;font-size:3rem}
+.blog-content{padding:24px}
+.blog-tag{color:var(--accent);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.blog-content h3{margin:10px 0 16px;font-size:1.1rem;line-height:1.4}
+.blog-meta{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--text-muted)}
+
+/* ---------- INTEGRATION CTA ---------- */
+.int-cta{background:var(--accent);color:#fff}
+.int-cta-wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:30px}
+.int-cta h2{color:#fff;margin:0;font-size:1.75rem}
+
+/* ---------- FOOTER ---------- */
+footer{background:#1a1a2e;color:#fff;padding:70px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:#fff;font-size:1rem;margin-bottom:20px;font-family:'Inter',sans-serif;font-weight:700}
+footer ul li{margin-bottom:10px}
+footer ul li a{color:rgba(255,255,255,.7);font-size:.95rem;transition:color .3s}
+footer ul li a:hover{color:var(--accent)}
+.footer-about p{color:rgba(255,255,255,.7);margin:16px 0}
+.footer-contact{font-size:.9rem;color:rgba(255,255,255,.7);margin-top:14px}
+.footer-social{display:flex;gap:14px;margin-top:20px}
+.footer-social a{
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s;
+}
+.footer-social a:hover{background:var(--accent)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:24px;text-align:center;
+  font-size:.9rem;color:rgba(255,255,255,.6);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:992px){
+  .hero-grid,.app-grid,.cta-grid{grid-template-columns:1fr;gap:40px}
+  .builtfor-grid,.how-grid,.kf-grid,.why-grid,.industries-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+  .features-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .brand-row{grid-template-columns:repeat(3,1fr)}
+  .integration-logos{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  section{padding:60px 0}
+  .nav-links{display:none}
+  .menu-toggle{display:block}
+  .builtfor-grid,.how-grid,.kf-grid,.why-grid,.industries-grid,.blog-grid,.features-grid,.stats-grid,.brand-row,.integration-logos,.footer-grid{grid-template-columns:1fr}
+  .hero-cta,.cta-buttons{flex-direction:column;align-items:stretch}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container nav-wrap">
+    <a href="/" class="logo">Insta<span>Dispatch</span></a>
+    <nav class="nav-links" aria-label="Main Navigation">
+      <a href="#features">Features</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Book Demo</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Global Delivery and Courier Management <span class="highlight">Software</span></h1>
+      <p class="lead">Offering Innovative solutions for courier, logistics and delivery businesses for over a decade, InstaDispatch is the right choice for every delivery business, big or small.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Book a Free Demo</a>
+        <a href="#how" class="btn btn-secondary">See How It Works</a>
+      </div>
+      <div class="trust-line">
+        <span>No credit card required</span>
+        <span>Setup in minutes</span>
+        <span>500+ businesses trust us</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-stat s1"><span class="dot"></span> 10M+ Deliveries</div>
+      <div class="floating-stat s2"><span class="dot"></span> 99.9% Uptime</div>
+      <div style="background:linear-gradient(135deg,#a7d8ff,#c7e8ff);border-radius:12px;padding:60px 30px;text-align:center;font-size:5rem">🚚</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUSTED BAR ============ -->
+<section class="trusted">
+  <div class="container">
+    <h2>Trusted by Leading Delivery & Logistics Companies Worldwide</h2>
+    <div class="logo-strip">
+      <div class="logo-item">UK SAME DAY</div>
+      <div class="logo-item">UPS</div>
+      <div class="logo-item">DHL</div>
+      <div class="logo-item">FedEx</div>
+      <div class="logo-item">DSV</div>
+      <div class="logo-item">DPD</div>
+      <div class="logo-item">Palletways</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (NEW – AEO) ============ -->
+<section class="about">
+  <div class="container about-wrap">
+    <h2>What is InstaDispatch?</h2>
+    <p>InstaDispatch is a cloud-based delivery management software designed for courier companies, logistics providers, e-commerce businesses, and enterprises that manage last-mile delivery operations. The platform brings together automated dispatch, route optimization, real-time driver tracking, electronic proof of delivery (ePOD), customer notifications, and advanced reporting — helping you reduce delivery costs, improve efficiency, and delight your customers.</p>
+    <div class="capability-grid">
+      <div class="cap-item"><div class="ico">📦</div>Automated Dispatch</div>
+      <div class="cap-item"><div class="ico">🗺️</div>Route Optimization</div>
+      <div class="cap-item"><div class="ico">📍</div>Real-Time Tracking</div>
+      <div class="cap-item"><div class="ico">📱</div>Driver Mobile App</div>
+      <div class="cap-item"><div class="ico">✅</div>Digital ePOD</div>
+      <div class="cap-item"><div class="ico">📊</div>Reports & Analytics</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILT FOR ============ -->
+<section id="solutions">
+  <div class="container">
+    <div class="section-head">
+      <h2>Built For Every Type of Delivery Business</h2>
+      <p>From local couriers to enterprise logistics — InstaDispatch adapts to your operations.</p>
+    </div>
+    <div class="builtfor-grid">
+      <div class="builtfor-card">
+        <div class="ico">📨</div>
+        <h3>Domestic & International Couriers</h3>
+        <p>Manage parcel pickups, transfers, and deliveries across cities and countries.</p>
+      </div>
+      <div class="builtfor-card">
+        <div class="ico">🚚</div>
+        <h3>Last-Mile & Same-Day Delivery</h3>
+        <p>Speed up urban deliveries with smart dispatch and live route optimization.</p>
+      </div>
+      <div class="builtfor-card">
+        <div class="ico">✈️</div>
+        <h3>Freight Forwarders & White Glove Delivery</h3>
+        <p>Manage high-value, multi-leg deliveries with full operational visibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS (NEW) ============ -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>How InstaDispatch Works</h2>
+      <p>Get up and running in 3 simple steps — no IT team required.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="num">1</div>
+        <h3>Sign Up & Configure</h3>
+        <p>Create your account, add your team, drivers and define delivery zones in minutes.</p>
+      </div>
+      <div class="how-step">
+        <div class="num">2</div>
+        <h3>Dispatch & Optimize</h3>
+        <p>Auto-assign orders to nearest drivers and generate the most efficient routes automatically.</p>
+      </div>
+      <div class="how-step">
+        <div class="num">3</div>
+        <h3>Track & Deliver</h3>
+        <p>Track drivers live, capture digital proof of delivery, and keep customers updated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES (Existing) ============ -->
+<section id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2>Features</h2>
+      <p>All-in-one delivery management system, from booking to invoicing — fully cloud based.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-block">
+        <h3>Dispatcher Portal</h3>
+        <ul>
+          <li>Manage Drivers And Routes</li>
+          <li>View Real Time Driver Locations</li>
+          <li>Delivery Scheduling</li>
+          <li>Real Time ETAs And Tracking</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Customer Portal</h3>
+        <ul>
+          <li>Booking And Tracking</li>
+          <li>Labels And Manifests</li>
+          <li>Ecommerce Integrations</li>
+          <li>Billing And Payment</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Delivery Apps</h3>
+        <ul>
+          <li>Configurable Delivery App</li>
+          <li>Capture PODs</li>
+          <li>Capture Delivery Locations</li>
+          <li>Cash On Delivery And OTP</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Finance Manager</h3>
+        <ul>
+          <li>Customer Rates And Delivery Cost</li>
+          <li>Invoicing And Prepaid Payments</li>
+          <li>Cash On Delivery</li>
+          <li>Account Integrations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTEGRATIONS ============ -->
+<section class="integrations" id="integrations">
+  <div class="container">
+    <div class="section-head">
+      <h2>Sell Anywhere, Ship Using InstaDispatch</h2>
+      <p>Seamlessly connect carriers, sales channels, and warehouses.</p>
+    </div>
+    <div class="tab-row">
+      <div class="tab active">📦 Carrier Integration</div>
+      <div class="tab">🛒 Channel Integration</div>
+      <div class="tab">🏬 WMS Integration</div>
+    </div>
+    <div class="integration-logos">
+      <div class="int-logo">FedEx</div>
+      <div class="int-logo">DSV</div>
+      <div class="int-logo">NORSK</div>
+      <div class="int-logo">Parcelforce</div>
+      <div class="int-logo">DPD</div>
+      <div class="int-logo">Palletways</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY FEATURES (Existing) ============ -->
+<section class="keyfeat">
+  <div class="container">
+    <div class="section-head">
+      <h2>Key Features Of Delivery Management System</h2>
+      <p>InstaDispatch delivery management software is loaded with advanced features and offers a range of flexible solutions to suit your delivery and courier business. Take a look, we think you'll agree.</p>
+    </div>
+    <div class="kf-grid">
+      <div class="kf-card">
+        <div class="ico">🛣️</div>
+        <h3>Route Optimization</h3>
+        <p>Effective delivery route planning software helps businesses plan the most efficient route for delivery, reduce fuel costs, improve resource utilization, minimize delays, enhance customer experience, and make every delivery profitable.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">📲</div>
+        <h3>Digital Proof Of Delivery</h3>
+        <p>Capture digital signature, OTP, barcodes, photos, comment, timestamp and geo-coordinates at delivery location and access them instantly in the dispatcher dashboard or via API.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">📡</div>
+        <h3>Real-Time Delivery Tracking & Alerts</h3>
+        <p>Track your drivers in real-time on an interactive map. Keep your customers updated throughout the delivery cycle by sending them real-time SMS alerts at various stages.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">⚙️</div>
+        <h3>Automate Delivery Dispatch</h3>
+        <p>Reduce your workload by automating your deliveries to your nearest delivery agent as per their availability. Drivers get a delivery alert on Driver's app as soon as they receive a new delivery task.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">🏬</div>
+        <h3>Warehouse Management</h3>
+        <p>Manage warehouse operations hassle-free. Our system allows you to keep records of Intrahub Transfers, out for delivery, return orders and much more in just a few clicks.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">🗺️</div>
+        <h3>Delivery Zones</h3>
+        <p>Define delivery zones and set their pricing for each city to provide courier services as per your business requirements.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">🏷️</div>
+        <h3>Branded & Customizable</h3>
+        <p>Customize the solution with your company logo and domain name in order to build your own brand. Maintenance will be done by InstaDispatch.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">💵</div>
+        <h3>Cash On Delivery</h3>
+        <p>Complete Cash on Delivery workflow starting from manual or ecommerce booking to cash collection by driver and report generation to deposit cash to the sellers.</p>
+      </div>
+      <div class="kf-card">
+        <div class="ico">📈</div>
+        <h3>Reporting & Analytics</h3>
+        <p>Make data-driven decisions using detailed reports on your performance. You can get complete details of the data and make the required analysis.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="#features" class="btn btn-primary">View All Features</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE (NEW) ============ -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <h2>Why Businesses Choose InstaDispatch</h2>
+      <p>Built to scale with your delivery operations — from startup to enterprise.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ico">🎯</div>
+        <h3>All-in-One Platform</h3>
+        <p>Replace multiple tools with one unified system covering dispatch, routing, tracking, ePOD and analytics.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">⚡</div>
+        <h3>Quick & Easy Setup</h3>
+        <p>Get started in minutes with guided onboarding and intuitive UI — no technical expertise required.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">📈</div>
+        <h3>Scalable for Any Volume</h3>
+        <p>Whether you handle 50 or 50,000 deliveries a day, our platform scales without performance loss.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">🌍</div>
+        <h3>Global-Ready</h3>
+        <p>Multi-language, multi-currency, and used across 50+ countries worldwide.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">🛡️</div>
+        <h3>Enterprise-Grade Security</h3>
+        <p>Cloud-based architecture with 99.9% uptime, encrypted data and reliable backups.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">🤝</div>
+        <h3>Dedicated Support</h3>
+        <p>Get dedicated account management, onboarding sessions, and 24/7 customer support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES (Existing) ============ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Industries We Serve</h2>
+      <p>Our vehicle route planning software works for all business types.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="ind-card">
+        <div class="ind-img">📦</div>
+        <h3>Courier, Express and Parcel Delivery</h3>
+      </div>
+      <div class="ind-card">
+        <div class="ind-img">🛒</div>
+        <h3>E-Commerce Delivery</h3>
+      </div>
+      <div class="ind-card">
+        <div class="ind-img">✈️</div>
+        <h3>Freight Forwarding</h3>
+      </div>
+      <div class="ind-card">
+        <div class="ind-img">🛋️</div>
+        <h3>Furniture Delivery</h3>
+      </div>
+      <div class="ind-card">
+        <div class="ind-img">💐</div>
+        <h3>Gifts, Flowers and Cakes Delivery</h3>
+      </div>
+      <div class="ind-card">
+        <div class="ind-img">💊</div>
+        <h3>Pharmacy & Healthcare Delivery</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS (NEW) ============ -->
+<section class="stats">
+  <div class="container">
+    <h2>The Impact of InstaDispatch</h2>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Businesses Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10M+</div>
+        <div class="stat-label">Deliveries Managed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Countries Worldwide</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">99.9%</div>
+        <div class="stat-label">Platform Uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRANDS (Existing) ============ -->
+<section class="brands">
+  <div class="container">
+    <div class="brands-text">
+      <h2>Brands That Trust Us</h2>
+      <p>We push every boundary to ensure that InstaDispatch courier dispatch software brings efficiency to our client's business. For us every customer who comes on board must become a success story.</p>
+    </div>
+    <div class="brand-row">
+      <div class="brand-card">Freight Finders</div>
+      <div class="brand-card">Hitra Pošta</div>
+      <div class="brand-card">GLAM Solutions</div>
+      <div class="brand-card">RapidWheels</div>
+      <div class="brand-card">Reflex Couriers</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP (Existing) ============ -->
+<section class="app-section">
+  <div class="container app-grid">
+    <div class="app-content">
+      <h2>Get The App Now!</h2>
+      <p>Powerful mobile apps for drivers and managers — built for speed, simplicity, and reliability.</p>
+      <h3>Driver App</h3>
+      <p>Turn-by-turn navigation, offline mode, photo & signature capture for ePOD.</p>
+      <h3>Manager Dashboard</h3>
+      <p>Live driver tracking, drag-and-drop dispatch board, real-time delivery insights.</p>
+      <div class="app-buttons">
+        <a href="#" class="app-btn">📱 App Store</a>
+        <a href="#" class="app-btn">🤖 Google Play</a>
+      </div>
+    </div>
+    <div class="app-visual">📱</div>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA (Existing Improved) ============ -->
+<section class="contact-cta" id="contact">
+  <div class="container cta-grid">
+    <div>
+      <h2>Get in touch, to know more</h2>
+      <p>InstaDispatch delivery management software is a cloud based system and you can get started in no time. Contact us today to get a demo.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Schedule a Demo</a>
+        <a href="#" class="btn btn-white">Chat With Us</a>
+      </div>
+    </div>
+    <div class="cta-image">📦</div>
+  </div>
+</section>
+
+<!-- ============ FAQ (Existing + Expanded for AEO) ============ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about InstaDispatch.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">What is InstaDispatch? <span class="plus">+</span></div>
+        <div class="faq-a"><p>InstaDispatch is a cloud-based delivery management software that helps courier companies, e-commerce businesses, and logistics providers automate dispatch, optimize routes, track drivers in real-time, and manage proof of delivery — all from one platform.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I get an account? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Simply book a demo or contact our sales team. We'll guide you through setup, onboarding, and configuration based on your business needs.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is there any specific telecom carrier supported by Instadispatch? <span class="plus">+</span></div>
+        <div class="faq-a"><p>InstaDispatch supports a wide range of global SMS and telecom providers. You can also configure your own gateway as per your region.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does Instadispatch Mobile App work offline? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, our driver app supports offline mode. Deliveries and POD data are stored locally and synced automatically once internet connectivity is restored.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Which platform and version does the Instadispatch Driver App support? <span class="plus">+</span></div>
+        <div class="faq-a"><p>The InstaDispatch Driver App is available on both Android and iOS, supporting all modern OS versions.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I have a unique method of charging for orders to my customers. Will Instadispatch support the way I structure my pricing? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, InstaDispatch offers fully customizable pricing rules — including by zone, weight, distance, service type, and account-specific rates.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does InstaDispatch offer a free demo? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, you can book a free personalized demo with our team to see how InstaDispatch fits your delivery operations.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What integrations does InstaDispatch support? <span class="plus">+</span></div>
+        <div class="faq-a"><p>InstaDispatch integrates with leading carriers (FedEx, DPD, DSV, Parcelforce, Palletways), e-commerce platforms (Shopify, WooCommerce, Magento), and accounting tools — plus open APIs for custom integration.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG (Existing) ============ -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="blog-head">
+      <div>
+        <p style="color:var(--accent);font-weight:600;text-transform:uppercase;font-size:.9rem">Our Insights</p>
+        <h2>Latest Posts and Updates</h2>
+      </div>
+      <a href="#" class="btn btn-primary">View All Posts</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-img">📦</div>
+        <div class="blog-content">
+          <div class="blog-tag">Delivery Management Software</div>
+          <h3>Courier Exchange Integration Software: Manage Jobs, Drivers & Tracking</h3>
+          <div class="blog-meta">📅 April 14, 2026 · InstaDispatch</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">🗺️</div>
+        <div class="blog-content">
+          <div class="blog-tag">Route Planning Software</div>
+          <h3>Smarter Delivery Scheduling with Route Capacity Planner</h3>
+          <div class="blog-meta">📅 March 17, 2026 · InstaDispatch</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">🚚</div>
+        <div class="blog-content">
+          <div class="blog-tag">Delivery Management Software</div>
+          <h3>Last-Mile Delivery in the UK: Key Challenges & How Delivery Software Helps</h3>
+          <div class="blog-meta">📅 February 18, 2026 · InstaDispatch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTEGRATION CTA (Existing) ============ -->
+<section class="int-cta">
+  <div class="container int-cta-wrap">
+    <h2>Need Custom Integration? We Would Love To Discuss.</h2>
+    <a href="#contact" class="btn btn-white">Let's Connect</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="logo" style="color:#fff">Insta<span style="color:var(--accent)">Dispatch</span></div>
+        <p>InstaDispatch is a powerful cloud-based courier dispatch software, which has been created keeping in mind all the small and big aspects of the courier industry.</p>
+        <div class="footer-contact">
+          📞 +44 (0) 203-890-3158<br>
+          ✉️ Info@Instadispatch.com
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">x</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Same-Day Delivery Management</a></li>
+          <li><a href="#">Delivery Management Software</a></li>
+          <li><a href="#">E-Commerce Delivery Management</a></li>
+          <li><a href="#">Delivery Driver App</a></li>
+          <li><a href="#">Freight Forwarding Software</a></li>
+          <li><a href="#">Route Optimization Software</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Helpful Links</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Download Android App</a></li>
+          <li><a href="#">Download iOS App</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Acceptable Use Policy</a></li>
+          <li><a href="#">Data Processing Agreement</a></li>
+          <li><a href="#">Service Level Agreement</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 InstaDispatch. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')});
+    item.classList.toggle('active');
+  });
+});
+
+// Tabs (Integration)
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+  });
+});
+
+// Mobile Menu
+const toggle=document.querySelector('.menu-toggle');
+const navLinks=document.querySelector('.nav-links');
+toggle?.addEventListener('click',()=>{
+  navLinks.style.display=navLinks.style.display==='flex'?'none':'flex';
+  navLinks.style.flexDirection='column';
+  navLinks.style.position='absolute';
+  navLinks.style.top='70px';
+  navLinks.style.left='0';
+  navLinks.style.right='0';
+  navLinks.style.background='#fff';
+  navLinks.style.padding='20px';
+  navLinks.style.boxShadow='0 8px 20px rgba(0,0,0,.08)';
+});
+</script>
+
+</body>
+</html>
