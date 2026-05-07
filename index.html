@@ -3,1572 +3,1493 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InstaDispatch – Global Delivery & Courier Management Software</title>
-<meta name="description" content="InstaDispatch is a cloud-based delivery management software. Automate dispatch, optimize routes, track drivers in real-time, manage ePOD, and reduce delivery costs.">
+
+<title>InstaDispatch – Delivery Management Software for Courier & Logistics</title>
+<meta name="description" content="InstaDispatch is a cloud-based delivery management software. Automate dispatch, optimize routes, track drivers in real-time, manage ePOD and reduce delivery costs. Book a free demo today.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.instadispatch.com/">
+
 <meta property="og:title" content="InstaDispatch – Delivery Management Software">
 <meta property="og:description" content="Automate dispatch, optimize routes, track deliveries & manage ePOD from one powerful platform.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InstaDispatch","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"150"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is InstaDispatch?","acceptedAnswer":{"@type":"Answer","text":"InstaDispatch is a cloud-based delivery management software for courier, logistics and last-mile delivery businesses."}},{"@type":"Question","name":"Does Instadispatch Mobile App work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes, the driver app supports offline mode and syncs once connectivity is restored."}},{"@type":"Question","name":"Which platform does the Driver App support?","acceptedAnswer":{"@type":"Answer","text":"The InstaDispatch Driver App is available on Android and iOS."}}]}</script>
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"InstaDispatch","url":"https://www.instadispatch.com","logo":"https://www.instadispatch.com/logo.png","description":"Cloud-based delivery management software for courier, logistics and last-mile delivery businesses.","contactPoint":{"@type":"ContactPoint","telephone":"+44-203-890-3158","contactType":"sales","email":"info@instadispatch.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InstaDispatch","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"150"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is InstaDispatch?","acceptedAnswer":{"@type":"Answer","text":"InstaDispatch is a cloud-based delivery management software for courier, logistics and last-mile delivery businesses."}},{"@type":"Question","name":"How do I get an account?","acceptedAnswer":{"@type":"Answer","text":"Book a demo or contact our sales team to set up your account."}},{"@type":"Question","name":"Does Instadispatch Mobile App work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes, the driver app supports offline mode."}}]}
+</script>
 
 <style>
-/* ============================================================
-   INSTADISPATCH — PREMIUM REDESIGN
-   Aesthetic: Dark-luxury editorial meets precision logistics
-   Palette: Deep navy + electric orange + warm cream
-   Fonts: Syne (display) + DM Sans (body)
-   ============================================================ */
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: #05060F;
-  color: #E8E4DC;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  color:#0a0a1f;
+  background:#fff;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
-img { max-width: 100%; display: block; }
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
 
-:root {
-  --navy:    #05060F;
-  --navy2:   #0C0E1F;
-  --navy3:   #111327;
-  --orange:  #FF5C2B;
-  --orange2: #FF7A52;
-  --cream:   #E8E4DC;
-  --cream2:  #C9C4B8;
-  --white:   #FFFFFF;
-  --border:  rgba(232,228,220,0.08);
-  --border2: rgba(232,228,220,0.14);
-  --glass:   rgba(255,255,255,0.04);
-  --glow:    0 0 60px rgba(255,92,43,0.18);
-  --r:       16px;
-  --r2:      24px;
-}
-
-/* ---- TYPOGRAPHY ---- */
-h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; font-weight: 700; color: var(--white); line-height: 1.1; }
-h1 { font-size: clamp(2.8rem, 5.5vw, 5.2rem); letter-spacing: -0.03em; }
-h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); letter-spacing: -0.025em; }
-h3 { font-size: 1.2rem; letter-spacing: -0.01em; }
-p  { color: var(--cream2); font-size: 1rem; line-height: 1.7; }
-
-.container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
-section { padding: 120px 0; }
-
-/* ---- NOISE OVERLAY ---- */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+:root{
+  --primary:#1a0d4d;
+  --primary-2:#2d1b69;
+  --primary-3:#4b2fa8;
+  --accent:#ff5b4f;
+  --accent-2:#ff8a70;
+  --accent-3:#ffb347;
+  --gradient-1:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  --gradient-2:linear-gradient(135deg,#ff5b4f 0%,#ff8a70 50%,#ffb347 100%);
+  --gradient-3:linear-gradient(135deg,#1a0d4d 0%,#4b2fa8 50%,#7c3aed 100%);
+  --gradient-mesh:radial-gradient(at 0% 0%,#667eea33 0px,transparent 50%),radial-gradient(at 100% 0%,#ff5b4f33 0px,transparent 50%),radial-gradient(at 100% 100%,#7c3aed33 0px,transparent 50%);
+  --bg-soft:#f7f5ff;
+  --bg-light:#fafaff;
+  --text:#0a0a1f;
+  --text-muted:#6b7280;
+  --border:rgba(0,0,0,.08);
+  --radius:20px;
+  --radius-sm:12px;
+  --shadow-sm:0 2px 8px rgba(26,13,77,.06);
+  --shadow:0 10px 40px rgba(26,13,77,.08);
+  --shadow-lg:0 25px 60px rgba(26,13,77,.15);
+  --shadow-xl:0 40px 80px rgba(26,13,77,.2);
+  --shadow-glow:0 0 40px rgba(255,91,79,.3);
 }
 
-/* ---- BUTTONS ---- */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 15px 32px; border-radius: 10px; font-weight: 500; font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  cursor: pointer; border: none; letter-spacing: 0.01em;
-}
-.btn-primary {
-  background: var(--orange);
-  color: #fff;
-  box-shadow: 0 8px 32px rgba(255,92,43,0.35);
-}
-.btn-primary:hover {
-  background: #FF4010;
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 14px 40px rgba(255,92,43,0.5);
-}
-.btn-ghost {
-  background: transparent;
-  color: var(--cream);
-  border: 1.5px solid var(--border2);
-  backdrop-filter: blur(8px);
-}
-.btn-ghost:hover {
-  background: var(--glass);
-  border-color: rgba(232,228,220,0.3);
-  transform: translateY(-2px);
-}
-.btn-sm { padding: 11px 22px; font-size: 14px; }
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;color:var(--primary);font-weight:800;line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(2.5rem,5.5vw,4.5rem);font-weight:900}
+h2{font-size:clamp(2rem,3.8vw,3rem);font-weight:800;margin-bottom:1rem}
+h3{font-size:1.25rem;margin-bottom:.5rem;font-weight:700}
+p{color:var(--text-muted);font-size:1.05rem;line-height:1.7}
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
-.navbar {
-  position: sticky; top: 0; z-index: 1000;
-  background: rgba(5,6,15,0.85);
-  backdrop-filter: blur(20px) saturate(1.8);
-  border-bottom: 1px solid var(--border);
-}
-.nav-wrap {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 0;
-}
-.logo {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800; font-size: 1.5rem;
-  color: var(--white); letter-spacing: -0.03em;
-}
-.logo-dot { color: var(--orange); }
-.nav-links { display: flex; align-items: center; gap: 36px; }
-.nav-links a {
-  font-size: 14px; font-weight: 500; color: var(--cream2);
-  transition: color 0.2s; letter-spacing: 0.01em;
-}
-.nav-links a:hover { color: var(--white); }
-.nav-right { display: flex; gap: 12px; align-items: center; }
-.menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--cream); font-size: 1.4rem; }
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+section{padding:100px 0;position:relative}
 
-/* ============================================================
-   HERO
-   ============================================================ */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex; align-items: center;
-  overflow: hidden;
-  background: var(--navy);
-  padding: 140px 0 100px;
-}
-/* Grid lines background */
-.hero-bg {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.hero-glow {
-  position: absolute;
-  width: 700px; height: 700px;
-  top: -100px; right: -100px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,92,43,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero-glow2 {
-  position: absolute;
-  width: 400px; height: 400px;
-  bottom: -50px; left: -50px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(70,100,255,0.08) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero-content { position: relative; z-index: 2; }
-.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 80px; align-items: center; }
+/* Animated background blobs */
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;z-index:0;animation:float 20s infinite ease-in-out}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-30px) scale(1.1)}66%{transform:translate(-20px,20px) scale(.95)}}
 
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(255,92,43,0.1);
-  border: 1px solid rgba(255,92,43,0.25);
-  border-radius: 100px; padding: 7px 16px;
-  font-size: 13px; color: var(--orange2); font-weight: 500;
-  margin-bottom: 28px;
-  animation: fadeUp 0.6s ease both;
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:16px 32px;border-radius:12px;font-weight:600;font-size:15px;
+  transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;border:none;
+  position:relative;overflow:hidden;font-family:inherit;
 }
-.hero-badge::before {
-  content: ''; width: 6px; height: 6px; border-radius: 50%;
-  background: var(--orange); animation: pulse 2s infinite;
+.btn-primary{
+  background:var(--gradient-2);color:#fff;
+  box-shadow:0 10px 30px rgba(255,91,79,.4);
 }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+.btn-primary::before{
+  content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+  transition:left .6s;
+}
+.btn-primary:hover::before{left:100%}
+.btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 15px 40px rgba(255,91,79,.5)}
+.btn-secondary{
+  background:rgba(255,255,255,.9);color:var(--primary);
+  border:1px solid var(--border);backdrop-filter:blur(10px);
+}
+.btn-secondary:hover{background:#fff;transform:translateY(-3px);box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.btn-ghost:hover{background:var(--primary);color:#fff}
+.btn-white{background:#fff;color:var(--primary);box-shadow:var(--shadow)}
+.btn-white:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
 
-.hero h1 {
-  animation: fadeUp 0.7s ease 0.1s both;
-  margin-bottom: 24px;
+/* ---------- NAVBAR ---------- */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(20px) saturate(180%);
+  border-bottom:1px solid rgba(255,255,255,.3);
+  transition:all .3s;
 }
-.hero h1 em {
-  font-style: normal;
-  background: linear-gradient(135deg, var(--orange) 0%, #FFB347 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+.navbar.scrolled{background:rgba(255,255,255,.95);box-shadow:var(--shadow-sm)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{
+  font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;
+  font-size:1.6rem;display:flex;align-items:center;gap:8px;
 }
-.hero-lead {
-  font-size: 1.15rem; max-width: 520px;
-  margin-bottom: 40px;
-  animation: fadeUp 0.7s ease 0.2s both;
+.logo-icon{
+  width:38px;height:38px;border-radius:10px;
+  background:var(--gradient-2);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:1.2rem;box-shadow:var(--shadow-glow);
 }
-.hero-actions {
-  display: flex; gap: 14px; flex-wrap: wrap;
-  animation: fadeUp 0.7s ease 0.3s both;
-  margin-bottom: 50px;
+.logo-text{
+  background:var(--gradient-3);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
-.hero-trust {
-  display: flex; flex-wrap: wrap; gap: 24px;
-  animation: fadeUp 0.7s ease 0.4s both;
+.nav-links{display:flex;gap:36px}
+.nav-links a{font-weight:500;font-size:.95rem;color:var(--text);transition:color .3s;position:relative}
+.nav-links a::after{
+  content:"";position:absolute;bottom:-6px;left:0;width:0;height:2px;
+  background:var(--gradient-2);transition:width .3s;
 }
-.hero-trust-item {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 13px; color: var(--cream2);
-}
-.hero-trust-item svg { color: #10d07a; }
+.nav-links a:hover{color:var(--accent)}
+.nav-links a:hover::after{width:100%}
+.menu-toggle{display:none;font-size:1.5rem;background:none;border:none;cursor:pointer;color:var(--primary)}
 
-@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-
-/* Hero Dashboard Visual */
-.hero-visual { position: relative; animation: fadeUp 0.9s ease 0.2s both; }
-.hero-dashboard {
-  background: var(--navy2);
-  border: 1px solid var(--border2);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.5), var(--glow);
+/* ---------- HERO ---------- */
+.hero{
+  padding:160px 0 100px;
+  background:var(--bg-light);
+  position:relative;overflow:hidden;
 }
-.dash-topbar {
-  background: var(--navy3);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 20px;
-  display: flex; align-items: center; gap: 12px;
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:var(--gradient-mesh);
+  opacity:.7;
 }
-.dash-dots { display: flex; gap: 7px; }
-.dash-dot {
-  width: 11px; height: 11px; border-radius: 50%;
+.hero .blob.b1{width:500px;height:500px;background:#ff5b4f;top:-100px;right:-100px}
+.hero .blob.b2{width:400px;height:400px;background:#7c3aed;bottom:-100px;left:-100px;animation-delay:-5s}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 16px;border-radius:100px;
+  background:rgba(255,91,79,.1);
+  border:1px solid rgba(255,91,79,.2);
+  color:var(--accent);font-size:.85rem;font-weight:600;
+  margin-bottom:24px;
 }
-.dash-dot:nth-child(1){background:#FF5F57}
-.dash-dot:nth-child(2){background:#FEBC2E}
-.dash-dot:nth-child(3){background:#28C840}
-.dash-title { font-size: 12px; color: var(--cream2); margin-left: 8px; font-family:'DM Sans',sans-serif; }
-.dash-body { padding: 20px; }
-
-.dash-stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 16px; }
-.dash-stat {
-  background: var(--glass);
-  border: 1px solid var(--border);
-  border-radius: 10px; padding: 14px;
+.hero-badge .pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 0 rgba(255,91,79,.7);animation:pulse 2s infinite;
 }
-.dash-stat-num { font-family:'Syne',sans-serif; font-size: 1.4rem; font-weight:700; color:#fff; }
-.dash-stat-label { font-size: 11px; color: var(--cream2); margin-top: 2px; }
-.dash-stat-up { font-size:11px; color:#10d07a; font-weight:500; }
-
-.dash-map {
-  background: linear-gradient(135deg, #0C1833, #091422);
-  border-radius: 12px;
-  height: 180px;
-  border: 1px solid var(--border);
-  position: relative; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,91,79,.7)}70%{box-shadow:0 0 0 10px rgba(255,91,79,0)}100%{box-shadow:0 0 0 0 rgba(255,91,79,0)}}
+.hero h1{margin-bottom:24px}
+.hero h1 .gradient{
+  background:var(--gradient-2);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:inline-block;
 }
-.dash-map-grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-  background-size: 30px 30px;
-}
-.map-route {
-  position: absolute;
-  top: 40px; left: 30px; right: 30px;
-}
-.map-route svg { width: 100%; }
-.map-truck {
-  position: absolute; top: 50%; left: 45%;
-  transform: translate(-50%,-50%);
-  font-size: 1.5rem;
-  animation: truckMove 3s ease-in-out infinite alternate;
-}
-@keyframes truckMove { from{left:35%} to{left:60%} }
-.map-dot {
-  position: absolute; width:10px; height:10px; border-radius:50%;
-  border: 2px solid #fff;
-  animation: dotPulse 2s ease infinite;
-}
-.map-dot.d1{background:var(--orange); top:30%; left:20%; animation-delay:0s}
-.map-dot.d2{background:#10d07a; top:65%; left:50%; animation-delay:0.4s}
-.map-dot.d3{background:#4A90FF; top:25%; right:20%; animation-delay:0.8s}
-@keyframes dotPulse {
-  0%,100%{box-shadow:0 0 0 0 rgba(255,92,43,0.4)}
-  50%{box-shadow:0 0 0 8px rgba(255,92,43,0)}
+.hero p.lead{font-size:1.2rem;margin-bottom:36px;max-width:560px;color:#4b5563}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px}
+.trust-line{display:flex;gap:24px;flex-wrap:wrap;font-size:.9rem;color:var(--text-muted);font-weight:500}
+.trust-line span{display:flex;align-items:center;gap:8px}
+.trust-line .check{
+  width:20px;height:20px;border-radius:50%;background:#10b981;
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:900;
 }
 
-.dash-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
-.dash-row-item {
-  background: var(--glass); border: 1px solid var(--border);
-  border-radius: 10px; padding: 12px 14px;
-  display: flex; align-items: center; gap: 10px;
+/* Hero Visual - Dashboard Mockup */
+.hero-visual{position:relative;perspective:1000px}
+.dashboard{
+  background:#fff;border-radius:20px;
+  box-shadow:var(--shadow-xl);
+  overflow:hidden;
+  transform:rotateY(-5deg) rotateX(5deg);
+  transition:transform .6s;
 }
-.dash-row-icon {
-  width: 34px; height: 34px; border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1rem;
+.hero-visual:hover .dashboard{transform:rotateY(0) rotateX(0)}
+.db-header{
+  background:var(--primary);padding:14px 18px;
+  display:flex;align-items:center;gap:8px;
 }
-.dash-row-icon.orange{background:rgba(255,92,43,0.15)}
-.dash-row-icon.green{background:rgba(16,208,122,0.15)}
-.dash-row-icon.blue{background:rgba(74,144,255,0.15)}
-.dash-row-icon.purple{background:rgba(168,85,247,0.15)}
-.dash-row-label { font-size:12px; color:var(--cream2); }
-.dash-row-val { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:#fff; }
-
-/* Floating cards */
-.float-card {
-  position: absolute;
-  background: var(--navy3);
-  border: 1px solid var(--border2);
-  border-radius: 14px; padding: 14px 18px;
-  display: flex; align-items: center; gap: 10px;
-  font-size: 13px; font-weight: 500; color: var(--white);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-  white-space: nowrap;
-  animation: floatAnim 4s ease-in-out infinite;
+.db-dot{width:12px;height:12px;border-radius:50%}
+.db-dot.r{background:#ff5f57}
+.db-dot.y{background:#febc2e}
+.db-dot.g{background:#28c840}
+.db-body{padding:24px;background:linear-gradient(180deg,#fafaff 0%,#fff 100%)}
+.db-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.db-stat{
+  background:#fff;padding:14px;border-radius:12px;
+  border:1px solid var(--border);
 }
-.float-card.fc1 { top: -20px; left: -30px; animation-delay: 0s; }
-.float-card.fc2 { bottom: -18px; right: -24px; animation-delay: 1.5s; }
-.float-icon { font-size: 1.3rem; }
-@keyframes floatAnim {
-  0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)}
+.db-stat .lbl{font-size:.7rem;color:var(--text-muted);font-weight:500;text-transform:uppercase}
+.db-stat .val{font-size:1.3rem;font-weight:800;color:var(--primary);font-family:'Plus Jakarta Sans'}
+.db-stat .trend{font-size:.7rem;color:#10b981;font-weight:600;margin-top:2px}
+.db-map{
+  background:linear-gradient(135deg,#e0e7ff,#fce7f3);
+  border-radius:12px;height:160px;position:relative;overflow:hidden;
 }
-
-/* ============================================================
-   SECTION HEADER
-   ============================================================ */
-.sec-eyebrow {
-  display: inline-block;
-  font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--orange);
-  margin-bottom: 14px;
+.db-map::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(255,255,255,.3) 20px,rgba(255,255,255,.3) 21px);
 }
-.sec-head { text-align: center; max-width: 680px; margin: 0 auto 64px; }
-.sec-head p { font-size: 1.05rem; margin-top: 12px; }
-
-/* ============================================================
-   MARQUEE (TRUST BAR)
-   ============================================================ */
-.marquee-section {
-  background: var(--navy2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 28px 0;
-  overflow: hidden;
+.map-pin{
+  position:absolute;width:24px;height:24px;border-radius:50%;
+  background:var(--accent);border:3px solid #fff;
+  box-shadow:0 4px 12px rgba(255,91,79,.5);
+  animation:bounce 2s infinite;
 }
-.marquee-label {
-  text-align: center;
-  font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--cream2); margin-bottom: 20px; opacity: 0.6;
-}
-.marquee-track { display: flex; gap: 0; overflow: hidden; }
-.marquee-inner {
-  display: flex; gap: 0;
-  animation: marqueeScroll 22s linear infinite;
-  flex-shrink: 0;
-}
-.marquee-item {
-  padding: 10px 40px;
-  font-family: 'Syne', sans-serif;
-  font-weight: 700; font-size: 1.05rem;
-  color: rgba(232,228,220,0.35);
-  letter-spacing: 0.02em;
-  border-right: 1px solid var(--border);
-  transition: color 0.3s;
-  white-space: nowrap;
-}
-.marquee-item:hover { color: var(--cream); }
-@keyframes marqueeScroll {
-  from{transform:translateX(0)} to{transform:translateX(-50%)}
+.map-pin.p1{top:30%;left:25%}
+.map-pin.p2{top:50%;left:55%;animation-delay:.3s;background:#10b981}
+.map-pin.p3{top:65%;left:80%;animation-delay:.6s;background:#7c3aed}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.db-route{
+  position:absolute;top:38%;left:30%;width:60%;height:30%;
+  border:2px dashed var(--accent);border-radius:50%;
+  border-color:transparent var(--accent) transparent transparent;
+  transform:rotate(-30deg);
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
-.about-section { background: var(--navy); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.about-right { }
-.about-tag {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--glass); border: 1px solid var(--border2);
-  border-radius: 100px; padding: 6px 16px;
-  font-size: 13px; color: var(--cream2); margin-bottom: 28px;
+.floating-card{
+  position:absolute;background:#fff;padding:14px 20px;
+  border-radius:14px;box-shadow:var(--shadow-lg);
+  display:flex;align-items:center;gap:12px;
+  font-size:.85rem;font-weight:600;z-index:3;
+  animation:floatCard 4s infinite ease-in-out;
 }
-.about-right h2 { margin-bottom: 20px; }
-.about-right p { margin-bottom: 28px; }
-.about-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-.pill {
-  display: flex; align-items: center; gap: 8px;
-  background: var(--glass); border: 1px solid var(--border2);
-  border-radius: 100px; padding: 9px 18px;
-  font-size: 13px; color: var(--cream); font-weight: 500;
-  transition: all 0.3s;
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floating-card.f1{top:5%;left:-30px}
+.floating-card.f2{bottom:10%;right:-30px;animation-delay:-2s}
+.fc-icon{
+  width:40px;height:40px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
 }
-.pill:hover { border-color: var(--orange); color: var(--orange); background: rgba(255,92,43,0.06); }
-.pill span { font-size: 1rem; }
+.fc-icon.green{background:#d1fae5;color:#10b981}
+.fc-icon.orange{background:#ffe4e0;color:var(--accent)}
+.fc-text small{display:block;color:var(--text-muted);font-size:.7rem;font-weight:500}
 
-/* Big number grid */
-.about-left { }
-.big-num-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-.big-num-card {
-  background: var(--navy2);
-  padding: 40px 32px;
-  position: relative; overflow: hidden;
+/* ---------- TRUSTED ---------- */
+.trusted{padding:60px 0;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.trusted-label{text-align:center;font-size:.85rem;color:var(--text-muted);font-weight:600;margin-bottom:30px;letter-spacing:2px;text-transform:uppercase}
+.logo-strip{
+  display:flex;justify-content:space-around;align-items:center;gap:50px;
+  flex-wrap:wrap;
 }
-.big-num-card:first-child { border-radius: var(--r2) 0 0 0; }
-.big-num-card:nth-child(2) { border-radius: 0 var(--r2) 0 0; }
-.big-num-card:nth-child(3) { border-radius: 0 0 0 var(--r2); }
-.big-num-card:last-child { border-radius: 0 0 var(--r2) 0; background: var(--orange); }
-.big-num-card:last-child .big-num,
-.big-num-card:last-child .big-num-label { color: #fff; }
-.big-num {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  font-weight: 800; color: var(--white);
-  line-height: 1;
+.logo-item{
+  font-weight:800;color:#9ca3af;font-size:1.3rem;
+  font-family:'Plus Jakarta Sans';letter-spacing:-.02em;
+  filter:grayscale(1);opacity:.6;transition:all .3s;
 }
-.big-num-label { font-size: 14px; color: var(--cream2); margin-top: 8px; }
-.big-num-card::before {
-  content: '';
-  position: absolute; top: 0; right: 0;
-  width: 80px; height: 80px;
-  border-radius: 0 0 0 80px;
-  background: rgba(255,255,255,0.03);
-}
+.logo-item:hover{filter:grayscale(0);opacity:1;color:var(--primary);transform:scale(1.05)}
 
-/* ============================================================
-   HOW IT WORKS
-   ============================================================ */
-.how-section { background: var(--navy2); }
-.steps-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--r2); overflow: hidden; margin-top: 60px; }
-.step-card { background: var(--navy); padding: 48px 36px; position: relative; }
-.step-num {
-  font-family: 'Syne', sans-serif;
-  font-size: 5rem; font-weight: 800;
-  color: rgba(255,92,43,0.12);
-  line-height: 1; margin-bottom: 24px;
-  letter-spacing: -0.05em;
+/* ---------- ABOUT ---------- */
+.about{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)}
+.about-wrap{max-width:920px;margin:0 auto;text-align:center}
+.section-pill{
+  display:inline-block;padding:6px 16px;border-radius:100px;
+  background:rgba(124,58,237,.1);color:#7c3aed;
+  font-size:.8rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:1px;margin-bottom:16px;
 }
-.step-ico {
-  width: 52px; height: 52px; border-radius: 14px;
-  background: rgba(255,92,43,0.1);
-  border: 1px solid rgba(255,92,43,0.2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.4rem; margin-bottom: 20px;
+.about p{font-size:1.15rem;margin:20px auto 40px;color:#4b5563;max-width:780px}
+.capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cap-item{
+  background:#fff;padding:28px 22px;border-radius:18px;
+  border:1px solid var(--border);font-weight:700;
+  transition:all .4s cubic-bezier(.4,0,.2,1);
+  position:relative;overflow:hidden;
 }
-.step-card h3 { margin-bottom: 12px; }
-.step-card p { font-size: 14px; }
-.step-connector {
-  position: absolute; top: 60px; right: -16px;
-  width: 32px; height: 32px; border-radius: 50%;
-  background: var(--navy2);
-  border: 1px solid var(--border2);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--orange); font-size: 12px;
-  z-index: 1;
+.cap-item::before{
+  content:"";position:absolute;inset:0;
+  background:var(--gradient-2);opacity:0;transition:opacity .4s;z-index:0;
+}
+.cap-item:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);color:#fff}
+.cap-item:hover::before{opacity:1}
+.cap-item:hover .ico{background:rgba(255,255,255,.2)}
+.cap-item > *{position:relative;z-index:1}
+.cap-item .ico{
+  width:54px;height:54px;border-radius:14px;
+  background:var(--bg-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;margin:0 auto 14px;transition:all .4s;
 }
 
-/* ============================================================
-   BUILT FOR
-   ============================================================ */
-.builtfor-section { background: var(--navy); }
-.builtfor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 60px; }
-.builtfor-card {
-  background: var(--navy2);
-  border: 1px solid var(--border);
-  border-radius: var(--r2); padding: 36px;
-  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
-  cursor: default;
-  position: relative; overflow: hidden;
+/* ---------- BUILT FOR ---------- */
+.section-head{text-align:center;max-width:720px;margin:0 auto 60px}
+.section-head p{font-size:1.1rem;margin-top:14px}
+.builtfor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.builtfor-card{
+  background:#fff;padding:36px 30px;border-radius:24px;
+  border:1px solid var(--border);transition:all .4s;
+  position:relative;overflow:hidden;
 }
-.builtfor-card::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(255,92,43,0.05), transparent);
-  opacity: 0; transition: opacity 0.3s;
+.builtfor-card::after{
+  content:"";position:absolute;top:0;left:0;width:100%;height:4px;
+  background:var(--gradient-2);transform:scaleX(0);transform-origin:left;
+  transition:transform .4s;
 }
-.builtfor-card:hover { transform: translateY(-6px); border-color: rgba(255,92,43,0.3); box-shadow: 0 24px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,92,43,0.1); }
-.builtfor-card:hover::after { opacity: 1; }
-.bf-ico {
-  width: 56px; height: 56px; border-radius: 16px;
-  background: rgba(255,92,43,0.1); border: 1px solid rgba(255,92,43,0.2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem; margin-bottom: 24px;
+.builtfor-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-6px);border-color:transparent}
+.builtfor-card:hover::after{transform:scaleX(1)}
+.builtfor-card .ico{
+  width:60px;height:60px;border-radius:16px;
+  background:var(--gradient-2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;margin-bottom:20px;color:#fff;
+  box-shadow:0 8px 20px rgba(255,91,79,.3);
 }
-.builtfor-card h3 { margin-bottom: 12px; }
-.builtfor-card p { font-size: 14px; line-height: 1.65; }
+.builtfor-card h3{margin-bottom:12px;font-size:1.3rem}
 
-/* ============================================================
-   FEATURES
-   ============================================================ */
-.features-section { background: var(--navy2); }
-.feature-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 60px; }
-.feat-col {
-  background: var(--navy);
-  border: 1px solid var(--border);
-  border-radius: var(--r); overflow: hidden;
+/* ---------- HOW IT WORKS ---------- */
+.how{background:linear-gradient(180deg,var(--bg-soft) 0%,#fff 100%);position:relative;overflow:hidden}
+.how .blob{width:400px;height:400px;background:#7c3aed;top:20%;right:-150px;opacity:.15}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;position:relative;z-index:1}
+.how-step{
+  background:#fff;padding:40px 30px;border-radius:24px;
+  text-align:center;box-shadow:var(--shadow);position:relative;
+  transition:all .4s;
 }
-.feat-col-head {
-  padding: 24px;
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; gap: 12px;
+.how-step:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.how-step .num{
+  width:60px;height:60px;border-radius:50%;
+  background:var(--gradient-2);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1.5rem;margin:0 auto 22px;
+  font-family:'Plus Jakarta Sans';
+  box-shadow:0 10px 25px rgba(255,91,79,.4);
 }
-.feat-col-ico {
-  width: 38px; height: 38px; border-radius: 10px;
-  background: rgba(255,92,43,0.1);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem;
-}
-.feat-col-head h3 { font-size: 1rem; }
-.feat-list { padding: 8px 0; }
-.feat-list li {
-  padding: 12px 24px;
-  font-size: 13.5px; color: var(--cream2);
-  display: flex; align-items: center; gap: 10px;
-  border-bottom: 1px solid var(--border);
-  transition: color 0.2s, padding-left 0.2s;
-}
-.feat-list li:last-child { border: 0; }
-.feat-list li:hover { color: var(--white); padding-left: 28px; }
-.feat-list li::before { content: '›'; color: var(--orange); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+.how-step h3{margin-bottom:14px;font-size:1.3rem}
 
-/* ============================================================
-   KEY FEATURES (Cards)
-   ============================================================ */
-.kf-section { background: var(--navy); }
-.kf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; }
-.kf-card {
-  background: var(--navy2); border: 1px solid var(--border);
-  border-radius: var(--r2); padding: 32px;
-  transition: all 0.3s;
+/* ---------- FEATURES (Bento Grid) ---------- */
+.features{background:#fff}
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
 }
-.kf-card:hover { border-color: rgba(255,92,43,0.25); box-shadow: 0 20px 50px rgba(0,0,0,0.3); transform: translateY(-4px); }
-.kf-ico {
-  width: 48px; height: 48px; border-radius: 12px;
-  background: linear-gradient(135deg, var(--orange), #FF7A52);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.3rem; margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(255,92,43,0.3);
+.feature-block{
+  background:linear-gradient(135deg,#fff 0%,#fafaff 100%);
+  padding:32px 26px;border-radius:24px;
+  border:1px solid var(--border);
+  transition:all .4s;position:relative;overflow:hidden;
 }
-.kf-card h3 { margin-bottom: 12px; font-size: 1.1rem; }
-.kf-card p { font-size: 14px; line-height: 1.7; }
-
-/* ============================================================
-   WHY CHOOSE — ALTERNATING LAYOUT
-   ============================================================ */
-.why-section { background: var(--navy2); }
-.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 60px; }
-.why-card {
-  background: var(--navy3);
-  border: 1px solid var(--border);
-  border-radius: var(--r2); padding: 32px;
-  transition: all 0.3s;
+.feature-block::before{
+  content:"";position:absolute;top:-50%;right:-50%;
+  width:200%;height:200%;
+  background:radial-gradient(circle,rgba(255,91,79,.1) 0%,transparent 50%);
+  opacity:0;transition:opacity .4s;
 }
-.why-card:hover { border-color: rgba(255,92,43,0.2); transform: translateY(-4px); }
-.why-card:first-child { background: var(--orange); border-color: var(--orange); }
-.why-card:first-child h3, .why-card:first-child p { color: #fff; }
-.why-card:first-child .why-ico { background: rgba(255,255,255,0.2); }
-.why-ico { font-size: 2rem; margin-bottom: 16px; }
-.why-card h3 { margin-bottom: 10px; }
-.why-card p { font-size: 14px; }
-
-/* ============================================================
-   INDUSTRIES
-   ============================================================ */
-.industries-section { background: var(--navy); }
-.ind-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 60px; }
-.ind-card {
-  background: var(--navy2); border: 1px solid var(--border);
-  border-radius: var(--r2); overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
-  cursor: default;
+.feature-block:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(255,91,79,.3)}
+.feature-block:hover::before{opacity:1}
+.feature-block > *{position:relative}
+.fb-head{
+  display:flex;align-items:center;gap:12px;margin-bottom:20px;
+  padding-bottom:16px;border-bottom:1px solid var(--border);
 }
-.ind-card:hover { transform: translateY(-8px); box-shadow: 0 30px 70px rgba(0,0,0,0.4); border-color: rgba(255,92,43,0.25); }
-.ind-thumb {
-  height: 160px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 3.5rem;
-  position: relative; overflow: hidden;
+.fb-icon{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--gradient-2);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:1.2rem;
 }
-.ind-card:nth-child(1) .ind-thumb { background: linear-gradient(135deg, #1a0a2e, #2d1050); }
-.ind-card:nth-child(2) .ind-thumb { background: linear-gradient(135deg, #0a1a2e, #103050); }
-.ind-card:nth-child(3) .ind-thumb { background: linear-gradient(135deg, #1a2e0a, #2d5010); }
-.ind-card:nth-child(4) .ind-thumb { background: linear-gradient(135deg, #2e1a0a, #503010); }
-.ind-card:nth-child(5) .ind-thumb { background: linear-gradient(135deg, #2e0a1a, #500a30); }
-.ind-card:nth-child(6) .ind-thumb { background: linear-gradient(135deg, #0a2e2e, #105050); }
-.ind-body { padding: 24px; }
-.ind-body h3 { font-size: 1rem; color: var(--white); }
-
-/* ============================================================
-   INTEGRATIONS
-   ============================================================ */
-.int-section { background: var(--navy2); }
-.int-tabs {
-  display: flex; justify-content: center; gap: 8px;
-  margin-bottom: 50px; flex-wrap: wrap;
+.feature-block h3{margin:0;font-size:1.15rem}
+.feature-block ul li{
+  padding:10px 0;display:flex;align-items:center;gap:10px;
+  font-size:.92rem;color:#374151;font-weight:500;
 }
-.int-tab {
-  padding: 10px 22px; border-radius: 10px;
-  font-size: 14px; font-weight: 500; color: var(--cream2);
-  border: 1px solid var(--border); cursor: pointer;
-  transition: all 0.3s; background: transparent;
-}
-.int-tab.active {
-  background: var(--orange); color: #fff;
-  border-color: var(--orange);
-  box-shadow: 0 6px 20px rgba(255,92,43,0.3);
-}
-.int-tab:hover:not(.active) { border-color: var(--border2); color: var(--white); }
-.int-logos { display: grid; grid-template-columns: repeat(6,1fr); gap: 16px; }
-.int-logo-box {
-  background: var(--navy);
-  border: 1px solid var(--border);
-  border-radius: 14px; padding: 28px 16px;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Syne', sans-serif; font-weight: 700;
-  font-size: 14px; color: var(--cream2);
-  transition: all 0.3s; cursor: default;
-  text-align: center;
-}
-.int-logo-box:hover { border-color: rgba(255,92,43,0.3); color: var(--white); transform: scale(1.04); box-shadow: 0 12px 30px rgba(0,0,0,0.3); }
-
-/* ============================================================
-   APP SECTION
-   ============================================================ */
-.app-section { background: var(--navy); }
-.app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.app-left h2 { margin-bottom: 20px; }
-.app-left p { margin-bottom: 32px; }
-.app-feature-list { margin-bottom: 36px; }
-.app-feature-item {
-  display: flex; gap: 14px; align-items: flex-start;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-}
-.app-feature-item:last-child { border: 0; }
-.afl-ico {
-  width: 42px; height: 42px; border-radius: 10px;
-  background: var(--glass); border: 1px solid var(--border2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem; flex-shrink: 0; margin-top: 2px;
-}
-.afl-title { font-weight: 600; font-size: 15px; color: var(--white); margin-bottom: 4px; }
-.afl-desc { font-size: 13.5px; color: var(--cream2); }
-.app-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-.app-store-btn {
-  display: inline-flex; align-items: center; gap: 12px;
-  background: var(--navy2); border: 1px solid var(--border2);
-  border-radius: 12px; padding: 14px 22px;
-  transition: all 0.3s;
-}
-.app-store-btn:hover { border-color: rgba(255,92,43,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.3); transform: translateY(-2px); }
-.asb-label { font-size: 11px; color: var(--cream2); }
-.asb-store { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: var(--white); }
-
-.app-right { position: relative; }
-.app-phone-wrap {
-  background: linear-gradient(145deg, #1a1032, #0d0a22);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 30px;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
-  position: relative; overflow: hidden;
-}
-.app-phone-wrap::before {
-  content: '';
-  position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
-  width: 200px; height: 200px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,92,43,0.15), transparent 70%);
-}
-.app-phone-emoji { font-size: 8rem; display: block; }
-.app-phone-tags {
-  display: flex; justify-content: center; gap: 10px;
-  flex-wrap: wrap; margin-top: 24px;
-}
-.app-phone-tag {
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 100px; padding: 7px 16px;
-  font-size: 12px; color: var(--cream2);
+.feature-block ul li::before{
+  content:"";width:18px;height:18px;border-radius:50%;
+  background:rgba(255,91,79,.1);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:900;flex-shrink:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff5b4f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size:10px;background-repeat:no-repeat;background-position:center;
 }
 
-/* ============================================================
-   CONTACT CTA
-   ============================================================ */
-.cta-section {
-  background: linear-gradient(135deg, var(--orange) 0%, #FF3D00 100%);
-  position: relative; overflow: hidden;
+/* ---------- INTEGRATIONS ---------- */
+.integrations{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)}
+.tab-row{display:flex;justify-content:center;gap:12px;margin-bottom:50px;flex-wrap:wrap}
+.tab{
+  padding:14px 28px;border-radius:100px;font-weight:600;cursor:pointer;
+  color:var(--text-muted);background:#fff;
+  border:1px solid var(--border);transition:all .3s;
+  display:inline-flex;align-items:center;gap:8px;
 }
-.cta-section::before {
-  content: '';
-  position: absolute; top: -50%; right: -10%;
-  width: 600px; height: 600px; border-radius: 50%;
-  background: rgba(255,255,255,0.06);
+.tab.active{
+  color:#fff;background:var(--gradient-2);
+  border-color:transparent;box-shadow:0 8px 20px rgba(255,91,79,.3);
 }
-.cta-section::after {
-  content: '';
-  position: absolute; bottom: -60%; left: -5%;
-  width: 500px; height: 500px; border-radius: 50%;
-  background: rgba(0,0,0,0.1);
+.integration-logos{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:20px;
 }
-.cta-inner {
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1fr auto;
-  gap: 60px; align-items: center;
+.int-logo{
+  background:#fff;padding:30px 20px;border-radius:18px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#9ca3af;border:1px solid var(--border);
+  transition:all .3s;font-size:1.05rem;font-family:'Plus Jakarta Sans';
+  filter:grayscale(1);
 }
-.cta-section h2 { color: #fff; margin-bottom: 16px; }
-.cta-section p { color: rgba(255,255,255,0.85); margin-bottom: 36px; font-size: 1.05rem; }
-.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn-white { background: #fff; color: var(--orange); font-weight: 600; }
-.btn-white:hover { background: rgba(255,255,255,0.9); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
-.btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
-.btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: #fff; transform: translateY(-2px); }
-.cta-visual { font-size: 6rem; position: relative; z-index: 1; }
+.int-logo:hover{
+  filter:grayscale(0);transform:translateY(-4px) scale(1.05);
+  box-shadow:var(--shadow);color:var(--primary);
+  border-color:var(--accent);
+}
 
-/* ============================================================
-   FAQ
-   ============================================================ */
-.faq-section { background: var(--navy); }
-.faq-wrap { max-width: 820px; margin: 60px auto 0; }
-.faq-item {
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
+/* ---------- KEY FEATURES (Cards Grid) ---------- */
+.keyfeat{background:#fff}
+.kf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.kf-card{
+  background:linear-gradient(135deg,#fff 0%,var(--bg-light) 100%);
+  padding:36px 30px;border-radius:24px;
+  border:1px solid var(--border);transition:all .4s;
+  position:relative;overflow:hidden;
 }
-.faq-q {
-  padding: 22px 0;
-  display: flex; justify-content: space-between; align-items: center;
-  cursor: pointer; font-weight: 500; font-size: 1rem;
-  color: var(--white); transition: color 0.2s;
-  user-select: none;
+.kf-card::before{
+  content:"";position:absolute;bottom:-50px;right:-50px;
+  width:150px;height:150px;border-radius:50%;
+  background:var(--gradient-2);opacity:0;filter:blur(40px);
+  transition:opacity .4s;
 }
-.faq-q:hover { color: var(--orange2); }
-.faq-q .faq-icon {
-  width: 28px; height: 28px; border-radius: 50%;
-  background: var(--glass); border: 1px solid var(--border2);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--orange); font-size: 1.1rem;
-  transition: all 0.3s; flex-shrink: 0;
+.kf-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:rgba(255,91,79,.2)}
+.kf-card:hover::before{opacity:.15}
+.kf-card > *{position:relative;z-index:1}
+.kf-card .ico{
+  width:56px;height:56px;border-radius:16px;
+  background:var(--gradient-2);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:20px;
+  box-shadow:0 10px 25px rgba(255,91,79,.3);
 }
-.faq-item.open .faq-icon { transform: rotate(45deg); background: rgba(255,92,43,0.15); }
-.faq-a {
-  max-height: 0; overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s;
-  padding: 0 0 0 0;
-}
-.faq-a p { font-size: 15px; padding-bottom: 22px; }
-.faq-item.open .faq-a { max-height: 200px; }
+.kf-card h3{margin-bottom:14px;font-size:1.25rem}
+.kf-card p{font-size:.95rem}
 
-/* ============================================================
-   BLOG
-   ============================================================ */
-.blog-section { background: var(--navy2); }
-.blog-header {
-  display: flex; justify-content: space-between; align-items: flex-end;
-  margin-bottom: 50px; gap: 20px; flex-wrap: wrap;
+/* ---------- WHY CHOOSE ---------- */
+.why{
+  background:var(--gradient-3);
+  color:#fff;position:relative;overflow:hidden;
 }
-.blog-header .sec-head { text-align: left; margin: 0; }
-.blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-.blog-card {
-  background: var(--navy); border: 1px solid var(--border);
-  border-radius: var(--r2); overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+.why::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 20% 50%,rgba(255,91,79,.3) 0%,transparent 50%),
+                    radial-gradient(circle at 80% 80%,rgba(124,58,237,.4) 0%,transparent 50%);
 }
-.blog-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.4); border-color: rgba(255,92,43,0.2); }
-.blog-thumb {
-  height: 200px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 3rem; position: relative; overflow: hidden;
+.why .container{position:relative;z-index:1}
+.why h2{color:#fff;text-align:center}
+.why .section-pill{background:rgba(255,255,255,.15);color:#fff}
+.why .section-head p{color:rgba(255,255,255,.8)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why-card{
+  background:rgba(255,255,255,.06);padding:32px 28px;border-radius:24px;
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(20px);transition:all .4s;
 }
-.blog-card:nth-child(1) .blog-thumb { background: linear-gradient(135deg, #1a1050, #2d1a80); }
-.blog-card:nth-child(2) .blog-thumb { background: linear-gradient(135deg, #0a2a1a, #0a4a2a); }
-.blog-card:nth-child(3) .blog-thumb { background: linear-gradient(135deg, #1a2a0a, #2a4a10); }
-.blog-body { padding: 28px; }
-.blog-tag {
-  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--orange);
-  margin-bottom: 10px;
+.why-card:hover{background:rgba(255,255,255,.1);transform:translateY(-6px);border-color:rgba(255,91,79,.5)}
+.why-card h3{color:#fff;margin-bottom:12px;font-size:1.2rem}
+.why-card p{color:rgba(255,255,255,.75);font-size:.95rem}
+.why-card .ico{
+  width:54px;height:54px;border-radius:14px;
+  background:var(--gradient-2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:18px;color:#fff;
 }
-.blog-body h3 { font-size: 1.05rem; line-height: 1.5; margin-bottom: 16px; color: var(--white); }
-.blog-meta { font-size: 12.5px; color: var(--cream2); display: flex; align-items: center; gap: 8px; }
 
-/* ============================================================
-   INTEGRATION BOTTOM CTA
-   ============================================================ */
-.int-bottom-cta {
-  background: var(--navy2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 50px 0;
+/* ---------- INDUSTRIES ---------- */
+.industries{background:linear-gradient(180deg,var(--bg-soft) 0%,#fff 100%)}
+.industries-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.ind-card{
+  border-radius:24px;overflow:hidden;
+  box-shadow:var(--shadow);transition:all .4s;
+  background:#fff;cursor:pointer;
 }
-.int-cta-inner {
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 24px;
+.ind-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl)}
+.ind-img{
+  height:220px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:5rem;position:relative;overflow:hidden;
 }
-.int-cta-inner h2 { font-size: 1.75rem; }
+.ind-card:nth-child(1) .ind-img{background:linear-gradient(135deg,#ffd6a5,#ffb347)}
+.ind-card:nth-child(2) .ind-img{background:linear-gradient(135deg,#a0e7e5,#7ed6df)}
+.ind-card:nth-child(3) .ind-img{background:linear-gradient(135deg,#b4f8c8,#4ade80)}
+.ind-card:nth-child(4) .ind-img{background:linear-gradient(135deg,#fbe7c6,#f6d365)}
+.ind-card:nth-child(5) .ind-img{background:linear-gradient(135deg,#ffafbd,#ffc3a0)}
+.ind-card:nth-child(6) .ind-img{background:linear-gradient(135deg,#c2e9fb,#a1c4fd)}
+.ind-card h3{padding:24px;text-align:center;font-size:1.1rem;margin:0}
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer {
-  background: var(--navy);
-  border-top: 1px solid var(--border);
-  padding: 80px 0 36px;
+/* ---------- STATS ---------- */
+.stats{
+  background:var(--primary);
+  color:#fff;position:relative;overflow:hidden;
 }
-.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 60px; }
-.footer-brand { }
-.footer-logo { font-family:'Syne',sans-serif; font-weight:800; font-size:1.4rem; color:#fff; letter-spacing:-0.03em; margin-bottom:16px; }
-.footer-logo span { color:var(--orange); }
-.footer-desc { font-size:14px; color:var(--cream2); line-height:1.7; margin-bottom:20px; }
-.footer-contact-info { font-size:13px; color:var(--cream2); line-height:2; }
-.footer-social { display:flex; gap:10px; margin-top:20px; }
-.fsoc {
-  width:36px; height:36px; border-radius:9px;
-  background:var(--glass); border:1px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  font-size:13px; font-weight:700; color:var(--cream2);
-  transition:all 0.3s;
+.stats::before{
+  content:"";position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 30c-7-15-15-22-30-22v44c15 0 23-7 30-22zm0 0c7-15 15-22 30-22v44c-15 0-23-7-30-22z' fill='%23fff' fill-opacity='.03'/%3E%3C/svg%3E");
 }
-.fsoc:hover { background:var(--orange); border-color:var(--orange); color:#fff; transform:translateY(-2px); }
-footer h4 { font-size:14px; font-weight:700; color:var(--white); margin-bottom:20px; letter-spacing:0.02em; }
-footer ul li { margin-bottom:10px; }
-footer ul li a { font-size:14px; color:var(--cream2); transition:color 0.2s; }
-footer ul li a:hover { color:var(--orange); }
-.footer-bottom {
-  border-top:1px solid var(--border);
-  padding-top:28px;
-  display:flex; justify-content:space-between; align-items:center;
-  flex-wrap:wrap; gap:12px;
-  font-size:13px; color:rgba(232,228,220,0.45);
+.stats .container{position:relative;z-index:1}
+.stats h2{color:#fff;text-align:center;margin-bottom:16px}
+.stats .section-pill{background:rgba(255,255,255,.15);color:#fff}
+.stats > .container > p{text-align:center;color:rgba(255,255,255,.8);margin-bottom:60px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stat-item{
+  text-align:center;padding:30px 20px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;backdrop-filter:blur(10px);
+  transition:all .4s;
 }
-.footer-bottom a { color:rgba(232,228,220,0.45); transition:color 0.2s; }
-.footer-bottom a:hover { color:var(--orange); }
+.stat-item:hover{background:rgba(255,255,255,.08);transform:translateY(-6px)}
+.stat-num{
+  font-size:3.5rem;font-weight:900;
+  font-family:'Plus Jakarta Sans';
+  background:var(--gradient-2);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  line-height:1;
+}
+.stat-label{font-size:.95rem;color:rgba(255,255,255,.85);margin-top:10px;font-weight:500}
 
-/* ============================================================
-   SCROLL ANIMATIONS
-   ============================================================ */
-.reveal {
-  opacity: 0; transform: translateY(32px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+/* ---------- BRANDS ---------- */
+.brands{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)}
+.brands-text{text-align:center;max-width:820px;margin:0 auto 50px}
+.brand-row{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.brand-card{
+  background:#fff;padding:30px 20px;border-radius:18px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#6b7280;
+  border:1px solid var(--border);min-height:110px;
+  transition:all .3s;font-family:'Plus Jakarta Sans';
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
+.brand-card:hover{
+  transform:translateY(-6px);box-shadow:var(--shadow-lg);
+  color:var(--primary);border-color:var(--accent);
+}
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media(max-width:1100px) {
-  .hero-grid { gap: 50px; }
-  .about-grid { gap: 50px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .feature-cols { grid-template-columns: repeat(2,1fr); }
-  .int-logos { grid-template-columns: repeat(3,1fr); }
+/* ---------- APP ---------- */
+.app-section{
+  background:linear-gradient(135deg,var(--bg-soft) 0%,#fff 50%,#ffe4e0 100%);
+  position:relative;overflow:hidden;
 }
-@media(max-width:900px) {
-  .hero-grid, .app-grid, .cta-inner, .about-grid { grid-template-columns: 1fr; }
-  .hero-visual, .float-card { display: none; }
-  .builtfor-grid, .kf-grid, .why-grid, .ind-grid, .blog-grid { grid-template-columns: repeat(2,1fr); }
-  .steps-track { grid-template-columns: 1fr; }
-  .step-connector { display: none; }
-  .blog-header { flex-direction: column; align-items: flex-start; }
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+.app-visual{
+  position:relative;height:500px;
+  display:flex;align-items:center;justify-content:center;
 }
-@media(max-width:640px) {
-  section { padding: 80px 0; }
-  .container { padding: 0 20px; }
-  .nav-links { display: none; }
-  .menu-toggle { display: block; }
-  .builtfor-grid, .kf-grid, .why-grid, .ind-grid, .blog-grid, .feature-cols, .int-logos, .big-num-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .hero-actions, .cta-btns, .app-btns { flex-direction: column; }
-  .btn { width: 100%; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-  .int-logos { grid-template-columns: repeat(2,1fr); }
+.phone-mockup{
+  width:280px;height:560px;
+  background:linear-gradient(135deg,var(--primary) 0%,var(--primary-3) 100%);
+  border-radius:40px;padding:14px;
+  box-shadow:var(--shadow-xl);
+  transform:rotate(-8deg);
+  transition:transform .6s;
+}
+.app-visual:hover .phone-mockup{transform:rotate(0)}
+.phone-screen{
+  background:#fff;height:100%;border-radius:30px;
+  padding:30px 20px;display:flex;flex-direction:column;gap:14px;
+}
+.phone-header{
+  background:var(--gradient-2);padding:16px;border-radius:14px;color:#fff;
+}
+.phone-header h4{color:#fff;font-size:.9rem;margin:0;font-weight:700}
+.phone-header p{color:rgba(255,255,255,.85);font-size:.7rem;margin-top:2px}
+.phone-card{
+  background:#fafaff;padding:14px;border-radius:12px;
+  border:1px solid var(--border);
+}
+.phone-card .pc-row{display:flex;justify-content:space-between;align-items:center;font-size:.75rem}
+.phone-card .pc-status{
+  padding:3px 10px;border-radius:100px;font-size:.65rem;font-weight:700;
+  background:#d1fae5;color:#065f46;
+}
+.phone-card h5{font-size:.85rem;margin-top:8px;color:var(--primary);font-family:'Plus Jakarta Sans'}
+.phone-card .addr{font-size:.7rem;color:var(--text-muted);margin-top:4px}
+
+.floating-ui{
+  position:absolute;background:#fff;padding:14px 18px;
+  border-radius:14px;box-shadow:var(--shadow-lg);
+  display:flex;align-items:center;gap:12px;font-weight:600;font-size:.85rem;
+  animation:floatCard 4s infinite ease-in-out;
+}
+.floating-ui.fu1{top:20px;right:30px}
+.floating-ui.fu2{bottom:30px;left:0;animation-delay:-2s}
+
+.app-content h2{margin-bottom:20px}
+.app-feature{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:18px;border-radius:16px;margin-top:14px;
+  background:rgba(255,255,255,.6);backdrop-filter:blur(10px);
+  border:1px solid var(--border);transition:all .3s;
+}
+.app-feature:hover{background:#fff;box-shadow:var(--shadow);transform:translateX(8px)}
+.app-feature .ico{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--gradient-2);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;flex-shrink:0;
+}
+.app-feature h3{font-size:1.05rem;margin-bottom:4px;color:var(--primary)}
+.app-feature p{font-size:.9rem;margin:0}
+.app-buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.app-btn{
+  background:var(--primary);color:#fff;padding:14px 24px;
+  border-radius:12px;font-weight:600;font-size:.9rem;
+  display:inline-flex;align-items:center;gap:10px;transition:all .3s;
+}
+.app-btn:hover{background:var(--primary-3);transform:translateY(-3px);box-shadow:var(--shadow)}
+.app-btn .ico{font-size:1.4rem}
+
+/* ---------- CONTACT CTA ---------- */
+.contact-cta{
+  background:var(--gradient-3);
+  color:#fff;position:relative;overflow:hidden;
+}
+.contact-cta::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 50%,rgba(255,91,79,.4) 0%,transparent 50%);
+}
+.cta-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+.contact-cta h2{color:#fff;font-size:2.5rem;line-height:1.2}
+.contact-cta p{color:rgba(255,255,255,.85);margin:20px 0 32px;font-size:1.1rem}
+.cta-buttons{display:flex;gap:14px;flex-wrap:wrap}
+.cta-image{
+  font-size:8rem;text-align:center;
+  filter:drop-shadow(0 20px 40px rgba(0,0,0,.3));
+  animation:floatCard 4s infinite ease-in-out;
+}
+
+/* ---------- FAQ ---------- */
+.faq{background:#fff}
+.faq-list{max-width:820px;margin:50px auto 0}
+.faq-item{
+  background:linear-gradient(135deg,#fff 0%,var(--bg-light) 100%);
+  border:1px solid var(--border);
+  border-radius:18px;margin-bottom:14px;overflow:hidden;
+  transition:all .4s;
+}
+.faq-item:hover{border-color:rgba(255,91,79,.3);box-shadow:var(--shadow-sm)}
+.faq-item.active{border-color:var(--accent);box-shadow:var(--shadow)}
+.faq-q{
+  padding:24px 28px;cursor:pointer;display:flex;
+  justify-content:space-between;align-items:center;gap:20px;
+  font-weight:700;color:var(--primary);font-size:1.05rem;
+  font-family:'Plus Jakarta Sans';
+}
+.faq-q .plus{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--gradient-2);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;font-weight:300;transition:transform .4s;flex-shrink:0;
+}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .5s ease,padding .3s;
+  padding:0 28px;color:var(--text-muted);
+}
+.faq-item.active .faq-a{max-height:300px;padding:0 28px 24px}
+.faq-item.active .plus{transform:rotate(45deg)}
+
+/* ---------- BLOG ---------- */
+.blog{background:var(--bg-soft)}
+.blog-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:50px;flex-wrap:wrap;gap:20px}
+.blog-head h2{margin:8px 0 0}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.blog-card{
+  background:#fff;border-radius:24px;overflow:hidden;
+  box-shadow:var(--shadow);transition:all .4s;cursor:pointer;
+}
+.blog-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl)}
+.blog-img{
+  height:220px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:4rem;position:relative;overflow:hidden;
+}
+.blog-card:nth-child(1) .blog-img{background:linear-gradient(135deg,#a1c4fd,#c2e9fb)}
+.blog-card:nth-child(2) .blog-img{background:linear-gradient(135deg,#fbc2eb,#a6c1ee)}
+.blog-card:nth-child(3) .blog-img{background:linear-gradient(135deg,#84fab0,#8fd3f4)}
+.blog-content{padding:28px}
+.blog-tag{
+  display:inline-block;padding:5px 12px;border-radius:100px;
+  background:rgba(255,91,79,.1);color:var(--accent);
+  font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+}
+.blog-content h3{margin:14px 0 18px;font-size:1.15rem;line-height:1.4}
+.blog-meta{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--text-muted);font-weight:500}
+.blog-meta .avatar{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--gradient-2);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.75rem;font-weight:800;
+}
+
+/* ---------- INTEGRATION CTA ---------- */
+.int-cta{
+  background:var(--gradient-2);
+  color:#fff;padding:80px 0;
+}
+.int-cta-wrap{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:30px;
+}
+.int-cta h2{color:#fff;margin:0;font-size:2rem;max-width:600px}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:#0a0a1f;color:#fff;padding:80px 0 30px;
+  position:relative;overflow:hidden;
+}
+footer::before{
+  content:"";position:absolute;top:-100px;right:-100px;
+  width:300px;height:300px;border-radius:50%;
+  background:var(--gradient-2);opacity:.1;filter:blur(80px);
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:50px;margin-bottom:50px;position:relative;z-index:1;
+}
+footer h4{color:#fff;font-size:1rem;margin-bottom:22px;font-family:'Inter';font-weight:700}
+footer ul li{margin-bottom:12px}
+footer ul li a{color:rgba(255,255,255,.65);font-size:.93rem;transition:all .3s}
+footer ul li a:hover{color:var(--accent);padding-left:4px}
+.footer-about p{color:rgba(255,255,255,.65);margin:18px 0;font-size:.93rem}
+.footer-contact{font-size:.9rem;color:rgba(255,255,255,.7);margin-top:18px;line-height:2}
+.footer-social{display:flex;gap:12px;margin-top:24px}
+.footer-social a{
+  width:42px;height:42px;border-radius:12px;
+  background:rgba(255,255,255,.06);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s;font-weight:700;color:#fff;
+  border:1px solid rgba(255,255,255,.08);
+}
+.footer-social a:hover{
+  background:var(--gradient-2);border-color:transparent;
+  transform:translateY(-3px);
+}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:30px;text-align:center;
+  font-size:.9rem;color:rgba(255,255,255,.5);
+  position:relative;z-index:1;
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.4,0,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:992px){
+  .hero-grid,.app-grid,.cta-grid{grid-template-columns:1fr;gap:60px}
+  .builtfor-grid,.how-grid,.kf-grid,.why-grid,.industries-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+  .features-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .brand-row{grid-template-columns:repeat(3,1fr)}
+  .integration-logos{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+  .capability-grid{grid-template-columns:repeat(2,1fr)}
+  section{padding:80px 0}
+}
+@media(max-width:640px){
+  section{padding:60px 0}
+  .hero{padding:120px 0 60px}
+  .nav-links{display:none}
+  .menu-toggle{display:block}
+  .nav-cta .btn{padding:12px 20px;font-size:.85rem}
+  .builtfor-grid,.how-grid,.kf-grid,.why-grid,.industries-grid,.blog-grid,
+  .features-grid,.stats-grid,.brand-row,.integration-logos,
+  .footer-grid,.capability-grid{grid-template-columns:1fr}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .floating-card,.floating-ui{display:none}
+  .stat-num{font-size:2.5rem}
 }
 </style>
 </head>
 <body>
 
-<!-- ============================================================ NAVBAR -->
-<header class="navbar">
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
   <div class="container nav-wrap">
-    <a href="/" class="logo">Insta<span class="logo-dot">Dispatch</span></a>
+    <a href="/" class="logo">
+      <div class="logo-icon">⚡</div>
+      <span class="logo-text">InstaDispatch</span>
+    </a>
     <nav class="nav-links">
       <a href="#features">Features</a>
       <a href="#integrations">Integrations</a>
       <a href="#solutions">Solutions</a>
-      <a href="#app">App</a>
+      <a href="#pricing">Pricing</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="nav-right">
-      <a href="#contact" class="btn btn-ghost btn-sm">Login</a>
-      <a href="#contact" class="btn btn-primary btn-sm">Book Demo</a>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Book Demo →</a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
     </div>
   </div>
 </header>
 
-<!-- ============================================================ HERO -->
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-  <div class="container hero-content">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-badge">🚀 Trusted by 500+ Delivery Businesses Worldwide</div>
-        <h1>Global Delivery &amp; Courier Management <em>Software</em></h1>
-        <p class="hero-lead">InstaDispatch powers the world's most efficient courier and logistics operations — from automated dispatch to real-time tracking and digital proof of delivery.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Book a Free Demo →</a>
-          <a href="#how" class="btn btn-ghost">See How It Works</a>
-        </div>
-        <div class="hero-trust">
-          <div class="hero-trust-item">
-            <svg width="14" height="14" fill="none" viewBox="0 0 14 14"><circle cx="7" cy="7" r="7" fill="#10d07a"/><path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
-            No credit card required
-          </div>
-          <div class="hero-trust-item">
-            <svg width="14" height="14" fill="none" viewBox="0 0 14 14"><circle cx="7" cy="7" r="7" fill="#10d07a"/><path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
-            Setup in minutes
-          </div>
-          <div class="hero-trust-item">
-            <svg width="14" height="14" fill="none" viewBox="0 0 14 14"><circle cx="7" cy="7" r="7" fill="#10d07a"/><path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
-            99.9% Platform Uptime
-          </div>
-        </div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Trusted by 500+ delivery businesses worldwide
       </div>
-      <div class="hero-visual">
-        <div class="float-card fc1"><span class="float-icon">✅</span>287 Deliveries Completed</div>
-        <div class="hero-dashboard">
-          <div class="dash-topbar">
-            <div class="dash-dots">
-              <div class="dash-dot"></div>
-              <div class="dash-dot"></div>
-              <div class="dash-dot"></div>
-            </div>
-            <span class="dash-title">InstaDispatch — Live Dashboard</span>
-          </div>
-          <div class="dash-body">
-            <div class="dash-stats-row">
-              <div class="dash-stat">
-                <div class="dash-stat-num">287</div>
-                <div class="dash-stat-label">Today's Deliveries</div>
-                <div class="dash-stat-up">↑ 12%</div>
-              </div>
-              <div class="dash-stat">
-                <div class="dash-stat-num">43</div>
-                <div class="dash-stat-label">Active Drivers</div>
-                <div class="dash-stat-up">↑ 5</div>
-              </div>
-              <div class="dash-stat">
-                <div class="dash-stat-num">98.2%</div>
-                <div class="dash-stat-label">On-Time Rate</div>
-                <div class="dash-stat-up">↑ 1.2%</div>
-              </div>
-              <div class="dash-stat">
-                <div class="dash-stat-num">£4.8k</div>
-                <div class="dash-stat-label">Revenue Today</div>
-                <div class="dash-stat-up">↑ 8%</div>
-              </div>
-            </div>
-            <div class="dash-map">
-              <div class="dash-map-grid"></div>
-              <div class="map-dot d1"></div>
-              <div class="map-dot d2"></div>
-              <div class="map-dot d3"></div>
-              <div class="map-truck">🚚</div>
-            </div>
-            <div class="dash-bottom">
-              <div class="dash-row-item">
-                <div class="dash-row-icon orange">📦</div>
-                <div><div class="dash-row-label">Pending Dispatch</div><div class="dash-row-val">24 orders</div></div>
-              </div>
-              <div class="dash-row-item">
-                <div class="dash-row-icon green">✅</div>
-                <div><div class="dash-row-label">Delivered Today</div><div class="dash-row-val">263 orders</div></div>
-              </div>
-              <div class="dash-row-item">
-                <div class="dash-row-icon blue">🗺️</div>
-                <div><div class="dash-row-label">Routes Optimized</div><div class="dash-row-val">31 routes</div></div>
-              </div>
-              <div class="dash-row-item">
-                <div class="dash-row-icon purple">📲</div>
-                <div><div class="dash-row-label">ePOD Captured</div><div class="dash-row-val">246 proofs</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="float-card fc2"><span class="float-icon">📍</span>Live Tracking Active</div>
+      <h1>Global Delivery & Courier Management <span class="gradient">Software</span></h1>
+      <p class="lead">Offering Innovative solutions for courier, logistics and delivery businesses for over a decade, InstaDispatch is the right choice for every delivery business, big or small.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Book a Free Demo →</a>
+        <a href="#how" class="btn btn-secondary">▶ See How It Works</a>
+      </div>
+      <div class="trust-line">
+        <span><span class="check">✓</span> No credit card required</span>
+        <span><span class="check">✓</span> Setup in minutes</span>
+        <span><span class="check">✓</span> Cancel anytime</span>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============================================================ MARQUEE -->
-<div class="marquee-section">
-  <div class="marquee-label">Trusted by leading delivery & logistics companies worldwide</div>
-  <div class="marquee-track">
-    <div class="marquee-inner" aria-hidden="true">
-      <div class="marquee-item">UK SAME DAY</div>
-      <div class="marquee-item">UPS</div>
-      <div class="marquee-item">DHL</div>
-      <div class="marquee-item">FedEx</div>
-      <div class="marquee-item">DSV</div>
-      <div class="marquee-item">DPD</div>
-      <div class="marquee-item">Palletways</div>
-      <div class="marquee-item">Parcelforce</div>
-      <div class="marquee-item">Freight Finders</div>
-      <div class="marquee-item">Hitra Pošta</div>
-      <div class="marquee-item">GLAM Solutions</div>
-      <div class="marquee-item">RapidWheels</div>
-      <div class="marquee-item">Reflex Couriers</div>
-      <div class="marquee-item">UK SAME DAY</div>
-      <div class="marquee-item">UPS</div>
-      <div class="marquee-item">DHL</div>
-      <div class="marquee-item">FedEx</div>
-      <div class="marquee-item">DSV</div>
-      <div class="marquee-item">DPD</div>
-      <div class="marquee-item">Palletways</div>
-      <div class="marquee-item">Parcelforce</div>
-      <div class="marquee-item">Freight Finders</div>
-      <div class="marquee-item">Hitra Pošta</div>
-      <div class="marquee-item">GLAM Solutions</div>
-      <div class="marquee-item">RapidWheels</div>
-      <div class="marquee-item">Reflex Couriers</div>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ ABOUT -->
-<section class="about-section" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left">
-        <div class="big-num-grid">
-          <div class="big-num-card reveal">
-            <div class="big-num">500+</div>
-            <div class="big-num-label">Businesses Served</div>
-          </div>
-          <div class="big-num-card reveal reveal-delay-1">
-            <div class="big-num">10M+</div>
-            <div class="big-num-label">Deliveries Managed</div>
-          </div>
-          <div class="big-num-card reveal reveal-delay-2">
-            <div class="big-num">50+</div>
-            <div class="big-num-label">Countries Worldwide</div>
-          </div>
-          <div class="big-num-card reveal reveal-delay-3">
-            <div class="big-num">99.9%</div>
-            <div class="big-num-label">Platform Uptime</div>
-          </div>
+    <div class="hero-visual reveal">
+      <div class="floating-card f1">
+        <div class="fc-icon green">📦</div>
+        <div class="fc-text">
+          <small>Delivery Completed</small>
+          +247 today
         </div>
       </div>
-      <div class="about-right reveal">
-        <div class="about-tag">🌐 What is InstaDispatch?</div>
-        <h2>One Platform for Every Delivery Operation</h2>
-        <p>InstaDispatch is a cloud-based delivery management software designed for courier companies, logistics providers, e-commerce businesses, and enterprises managing last-mile delivery. Replace fragmented tools with a single, powerful platform.</p>
-        <div class="about-pills">
-          <div class="pill"><span>📦</span>Automated Dispatch</div>
-          <div class="pill"><span>🗺️</span>Route Optimization</div>
-          <div class="pill"><span>📍</span>Real-Time Tracking</div>
-          <div class="pill"><span>📱</span>Driver Mobile App</div>
-          <div class="pill"><span>✅</span>Digital ePOD</div>
-          <div class="pill"><span>📊</span>Reports & Analytics</div>
-          <div class="pill"><span>💰</span>Finance Manager</div>
-          <div class="pill"><span>🏬</span>Warehouse Management</div>
+      <div class="floating-card f2">
+        <div class="fc-icon orange">⚡</div>
+        <div class="fc-text">
+          <small>Avg Dispatch Time</small>
+          1.8 minutes
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="db-header">
+          <div class="db-dot r"></div>
+          <div class="db-dot y"></div>
+          <div class="db-dot g"></div>
+        </div>
+        <div class="db-body">
+          <div class="db-stats">
+            <div class="db-stat">
+              <div class="lbl">Active</div>
+              <div class="val">142</div>
+              <div class="trend">↑ 12%</div>
+            </div>
+            <div class="db-stat">
+              <div class="lbl">Delivered</div>
+              <div class="val">1,284</div>
+              <div class="trend">↑ 8%</div>
+            </div>
+            <div class="db-stat">
+              <div class="lbl">On Route</div>
+              <div class="val">36</div>
+              <div class="trend">↑ 4%</div>
+            </div>
+          </div>
+          <div class="db-map">
+            <div class="db-route"></div>
+            <div class="map-pin p1"></div>
+            <div class="map-pin p2"></div>
+            <div class="map-pin p3"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ HOW IT WORKS -->
-<section class="how-section" id="how">
+<!-- ============ TRUSTED ============ -->
+<section class="trusted">
   <div class="container">
-    <div class="sec-head">
-      <div class="sec-eyebrow">How It Works</div>
-      <h2>Up and Running in 3 Simple Steps</h2>
-      <p>No IT team. No complex setup. Just fast, efficient delivery management from day one.</p>
+    <div class="trusted-label">Trusted by Leading Delivery & Logistics Companies</div>
+    <div class="logo-strip">
+      <div class="logo-item">UK SAMEDAY</div>
+      <div class="logo-item">UPS</div>
+      <div class="logo-item">DHL</div>
+      <div class="logo-item">FedEx</div>
+      <div class="logo-item">DSV</div>
+      <div class="logo-item">DPD</div>
+      <div class="logo-item">Palletways</div>
     </div>
-    <div class="steps-track">
-      <div class="step-card reveal">
-        <div class="step-num">01</div>
-        <div class="step-ico">⚙️</div>
-        <h3>Sign Up &amp; Configure</h3>
-        <p>Create your account, add your team, drivers, and define delivery zones and pricing rules in minutes.</p>
-        <div class="step-connector">→</div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (NEW) ============ -->
+<section class="about">
+  <div class="container about-wrap reveal">
+    <div class="section-pill">About InstaDispatch</div>
+    <h2>One Platform. Every Delivery. Total Control.</h2>
+    <p>InstaDispatch is a cloud-based delivery management software designed for courier companies, logistics providers, e-commerce businesses, and enterprises that manage last-mile delivery operations. Automate dispatch, optimize routes, track drivers in real-time, capture digital proof of delivery, and delight your customers — all from a single powerful platform.</p>
+    <div class="capability-grid">
+      <div class="cap-item">
+        <div class="ico">📦</div>
+        Automated Dispatch
       </div>
-      <div class="step-card reveal reveal-delay-1">
-        <div class="step-num">02</div>
-        <div class="step-ico">🗺️</div>
-        <h3>Dispatch &amp; Optimize</h3>
-        <p>Auto-assign orders to the nearest available drivers and generate the most efficient multi-stop routes automatically.</p>
-        <div class="step-connector">→</div>
+      <div class="cap-item">
+        <div class="ico">🗺️</div>
+        Route Optimization
       </div>
-      <div class="step-card reveal reveal-delay-2">
-        <div class="step-num">03</div>
-        <div class="step-ico">📍</div>
-        <h3>Track &amp; Deliver</h3>
-        <p>Track all drivers live on an interactive map, capture digital proof of delivery, and send customers real-time status updates.</p>
+      <div class="cap-item">
+        <div class="ico">📍</div>
+        Real-Time Tracking
+      </div>
+      <div class="cap-item">
+        <div class="ico">📱</div>
+        Driver Mobile App
+      </div>
+      <div class="cap-item">
+        <div class="ico">✅</div>
+        Digital ePOD
+      </div>
+      <div class="cap-item">
+        <div class="ico">📊</div>
+        Reports & Analytics
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ BUILT FOR -->
-<section class="builtfor-section" id="solutions">
+<!-- ============ BUILT FOR ============ -->
+<section id="solutions">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Built For</div>
+    <div class="section-head reveal">
+      <div class="section-pill">Built For</div>
       <h2>Every Type of Delivery Business</h2>
-      <p>From local couriers to enterprise logistics networks — InstaDispatch scales and adapts to your exact operations.</p>
+      <p>From local couriers to enterprise logistics — we adapt to your operations.</p>
     </div>
     <div class="builtfor-grid">
       <div class="builtfor-card reveal">
-        <div class="bf-ico">📨</div>
-        <h3>Domestic &amp; International Couriers</h3>
-        <p>Manage parcel pickups, hub transfers, and last-mile deliveries seamlessly across cities and countries with full visibility.</p>
+        <div class="ico">📨</div>
+        <h3>Domestic & International Couriers</h3>
+        <p>Manage parcel pickups, transfers, and deliveries across cities and countries with full visibility.</p>
       </div>
-      <div class="builtfor-card reveal reveal-delay-1">
-        <div class="bf-ico">🚚</div>
-        <h3>Last-Mile &amp; Same-Day Delivery</h3>
-        <p>Speed up urban deliveries with smart auto-dispatch, live route optimization, and real-time customer notifications.</p>
+      <div class="builtfor-card reveal">
+        <div class="ico">🚚</div>
+        <h3>Last-Mile & Same-Day Delivery</h3>
+        <p>Speed up urban deliveries with smart dispatch and live route optimization for your fleet.</p>
       </div>
-      <div class="builtfor-card reveal reveal-delay-2">
-        <div class="bf-ico">✈️</div>
-        <h3>Freight &amp; White Glove Delivery</h3>
-        <p>Manage high-value, multi-leg deliveries with complete operational visibility, documentation, and SLA compliance.</p>
+      <div class="builtfor-card reveal">
+        <div class="ico">✈️</div>
+        <h3>Freight Forwarders & White Glove</h3>
+        <p>Manage high-value, multi-leg deliveries with full operational visibility and tracking.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ FEATURES -->
-<section class="features-section" id="features">
+<!-- ============ HOW IT WORKS (NEW) ============ -->
+<section class="how" id="how">
+  <div class="blob"></div>
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Platform Features</div>
-      <h2>Everything You Need in One System</h2>
-      <p>From booking to invoicing — a fully cloud-based, all-in-one delivery management system.</p>
+    <div class="section-head reveal">
+      <div class="section-pill">How It Works</div>
+      <h2>Get Started in 3 Simple Steps</h2>
+      <p>Up and running in minutes — no IT team or technical expertise required.</p>
     </div>
-    <div class="feature-cols">
-      <div class="feat-col reveal">
-        <div class="feat-col-head">
-          <div class="feat-col-ico">🖥️</div>
+    <div class="how-grid">
+      <div class="how-step reveal">
+        <div class="num">1</div>
+        <h3>Sign Up & Configure</h3>
+        <p>Create your account, add your team, drivers and define delivery zones in just minutes.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="num">2</div>
+        <h3>Dispatch & Optimize</h3>
+        <p>Auto-assign orders to nearest drivers and generate the most efficient routes automatically.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="num">3</div>
+        <h3>Track & Deliver</h3>
+        <p>Track drivers live, capture digital proof of delivery, and keep customers updated in real-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-pill">Features</div>
+      <h2>Everything You Need In One Place</h2>
+      <p>All-in-one delivery management system, from booking to invoicing — fully cloud based.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-block reveal">
+        <div class="fb-head">
+          <div class="fb-icon">🎛️</div>
           <h3>Dispatcher Portal</h3>
         </div>
-        <ul class="feat-list">
+        <ul>
           <li>Manage Drivers And Routes</li>
-          <li>View Real-Time Driver Locations</li>
+          <li>View Real Time Driver Locations</li>
           <li>Delivery Scheduling</li>
-          <li>Real-Time ETAs &amp; Tracking</li>
-          <li>Drag-&amp;-Drop Dispatch Board</li>
+          <li>Real Time ETAs And Tracking</li>
         </ul>
       </div>
-      <div class="feat-col reveal reveal-delay-1">
-        <div class="feat-col-head">
-          <div class="feat-col-ico">👤</div>
+      <div class="feature-block reveal">
+        <div class="fb-head">
+          <div class="fb-icon">👥</div>
           <h3>Customer Portal</h3>
         </div>
-        <ul class="feat-list">
-          <li>Booking &amp; Live Tracking</li>
-          <li>Labels &amp; Manifests</li>
+        <ul>
+          <li>Booking And Tracking</li>
+          <li>Labels And Manifests</li>
           <li>Ecommerce Integrations</li>
-          <li>Billing &amp; Payment</li>
-          <li>Self-Service Delivery Updates</li>
+          <li>Billing And Payment</li>
         </ul>
       </div>
-      <div class="feat-col reveal reveal-delay-2">
-        <div class="feat-col-head">
-          <div class="feat-col-ico">📱</div>
+      <div class="feature-block reveal">
+        <div class="fb-head">
+          <div class="fb-icon">📱</div>
           <h3>Delivery Apps</h3>
         </div>
-        <ul class="feat-list">
-          <li>Configurable Driver App</li>
-          <li>Capture Digital PODs</li>
-          <li>Offline Mode Support</li>
-          <li>Cash On Delivery &amp; OTP</li>
-          <li>Turn-By-Turn Navigation</li>
+        <ul>
+          <li>Configurable Delivery App</li>
+          <li>Capture PODs</li>
+          <li>Capture Delivery Locations</li>
+          <li>Cash On Delivery And OTP</li>
         </ul>
       </div>
-      <div class="feat-col reveal reveal-delay-3">
-        <div class="feat-col-head">
-          <div class="feat-col-ico">💰</div>
+      <div class="feature-block reveal">
+        <div class="fb-head">
+          <div class="fb-icon">💰</div>
           <h3>Finance Manager</h3>
         </div>
-        <ul class="feat-list">
-          <li>Customer Rates &amp; Delivery Cost</li>
-          <li>Invoicing &amp; Prepaid Payments</li>
-          <li>Cash On Delivery Workflow</li>
+        <ul>
+          <li>Customer Rates And Delivery Cost</li>
+          <li>Invoicing And Prepaid Payments</li>
+          <li>Cash On Delivery</li>
           <li>Account Integrations</li>
-          <li>Revenue Reporting</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ KEY FEATURES -->
-<section class="kf-section">
+<!-- ============ INTEGRATIONS ============ -->
+<section class="integrations" id="integrations">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Key Features</div>
-      <h2>Advanced Capabilities Built for Scale</h2>
-      <p>InstaDispatch is loaded with powerful tools designed to optimize every stage of your delivery operation.</p>
+    <div class="section-head reveal">
+      <div class="section-pill">Integrations</div>
+      <h2>Sell Anywhere, Ship Using InstaDispatch</h2>
+      <p>Seamlessly connect carriers, sales channels, and warehouses.</p>
+    </div>
+    <div class="tab-row reveal">
+      <div class="tab active">📦 Carrier Integration</div>
+      <div class="tab">🛒 Channel Integration</div>
+      <div class="tab">🏬 WMS Integration</div>
+    </div>
+    <div class="integration-logos reveal">
+      <div class="int-logo">FedEx</div>
+      <div class="int-logo">DSV</div>
+      <div class="int-logo">NORSK</div>
+      <div class="int-logo">Parcelforce</div>
+      <div class="int-logo">DPD</div>
+      <div class="int-logo">Palletways</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY FEATURES ============ -->
+<section class="keyfeat">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-pill">Key Capabilities</div>
+      <h2>Key Features Of Delivery Management System</h2>
+      <p>InstaDispatch delivery management software is loaded with advanced features and offers a range of flexible solutions to suit your delivery and courier business. Take a look, we think you'll agree.</p>
     </div>
     <div class="kf-grid">
       <div class="kf-card reveal">
-        <div class="kf-ico">🛣️</div>
+        <div class="ico">🛣️</div>
         <h3>Route Optimization</h3>
-        <p>Plan the most efficient multi-stop delivery routes automatically. Reduce fuel costs, improve resource utilization, minimize delays, and make every delivery profitable.</p>
-      </div>
-      <div class="kf-card reveal reveal-delay-1">
-        <div class="kf-ico">📲</div>
-        <h3>Digital Proof of Delivery</h3>
-        <p>Capture digital signatures, OTPs, barcodes, photos, timestamps, and geo-coordinates at the delivery point. Access them instantly in the dispatcher dashboard or via API.</p>
-      </div>
-      <div class="kf-card reveal reveal-delay-2">
-        <div class="kf-ico">📡</div>
-        <h3>Real-Time Tracking &amp; Alerts</h3>
-        <p>Track all drivers live on an interactive map. Keep customers informed throughout the delivery cycle with automated SMS and email alerts at every stage.</p>
+        <p>Effective delivery route planning software helps businesses plan the most efficient route for delivery, reduce fuel costs, improve resource utilization, minimize delays, enhance customer experience, and make every delivery profitable.</p>
       </div>
       <div class="kf-card reveal">
-        <div class="kf-ico">⚙️</div>
-        <h3>Automated Dispatch</h3>
-        <p>Eliminate manual assignment. Automatically dispatch orders to the nearest available driver. Drivers receive instant alerts in the app the moment a new task is assigned.</p>
+        <div class="ico">📲</div>
+        <h3>Digital Proof Of Delivery</h3>
+        <p>Capture digital signature, OTP, barcodes, photos, comment, timestamp and geo-coordinates at delivery location and access them instantly in the dispatcher dashboard or via API.</p>
       </div>
-      <div class="kf-card reveal reveal-delay-1">
-        <div class="kf-ico">🏬</div>
+      <div class="kf-card reveal">
+        <div class="ico">📡</div>
+        <h3>Real-Time Tracking & Alerts</h3>
+        <p>Track your drivers in real-time on an interactive map. Keep your customers updated throughout the delivery cycle by sending them real-time SMS alerts at various stages.</p>
+      </div>
+      <div class="kf-card reveal">
+        <div class="ico">⚙️</div>
+        <h3>Automate Delivery Dispatch</h3>
+        <p>Reduce your workload by automating your deliveries to your nearest delivery agent as per their availability. Drivers get a delivery alert on Driver's app as soon as they receive a new delivery task.</p>
+      </div>
+      <div class="kf-card reveal">
+        <div class="ico">🏬</div>
         <h3>Warehouse Management</h3>
-        <p>Manage warehouse operations with ease. Track intra-hub transfers, out-for-delivery status, return orders, and inventory — all from a single unified dashboard.</p>
-      </div>
-      <div class="kf-card reveal reveal-delay-2">
-        <div class="kf-ico">🏷️</div>
-        <h3>Branded &amp; Customizable</h3>
-        <p>Customize the platform with your company logo and custom domain. Build your own branded delivery experience while InstaDispatch handles all the infrastructure.</p>
+        <p>Manage warehouse operations hassle-free. Our system allows you to keep records of Intrahub Transfers, out for delivery, return orders and much more in just a few clicks.</p>
       </div>
       <div class="kf-card reveal">
-        <div class="kf-ico">💵</div>
-        <h3>Cash On Delivery</h3>
-        <p>Complete COD workflow from booking to cash collection by the driver, report generation, and seamless deposit reconciliation back to sellers.</p>
-      </div>
-      <div class="kf-card reveal reveal-delay-1">
-        <div class="kf-ico">🗺️</div>
+        <div class="ico">🗺️</div>
         <h3>Delivery Zones</h3>
-        <p>Define granular delivery zones with custom pricing for each city and region — tailored precisely to your business's geographic service areas and rate structures.</p>
+        <p>Define delivery zones and set their pricing for each city to provide courier services as per your business requirements.</p>
       </div>
-      <div class="kf-card reveal reveal-delay-2">
-        <div class="kf-ico">📈</div>
-        <h3>Reporting &amp; Analytics</h3>
-        <p>Make data-driven decisions using detailed performance reports. Analyze delivery success rates, driver efficiency, revenue trends, and operational bottlenecks.</p>
+      <div class="kf-card reveal">
+        <div class="ico">🏷️</div>
+        <h3>Branded & Customizable</h3>
+        <p>Customize the solution with your company logo and domain name in order to build your own brand. Maintenance will be done by InstaDispatch.</p>
+      </div>
+      <div class="kf-card reveal">
+        <div class="ico">💵</div>
+        <h3>Cash On Delivery</h3>
+        <p>Complete Cash on Delivery workflow starting from manual or ecommerce booking to cash collection by driver and report generation to deposit cash to the sellers.</p>
+      </div>
+      <div class="kf-card reveal">
+        <div class="ico">📈</div>
+        <h3>Reporting & Analytics</h3>
+        <p>Make data-driven decisions using detailed reports on your performance. You can get complete details of the data and make the required analysis.</p>
       </div>
     </div>
-    <div style="text-align:center;margin-top:50px;" class="reveal">
-      <a href="#contact" class="btn btn-primary">View All Features →</a>
+    <div style="text-align:center;margin-top:50px" class="reveal">
+      <a href="#features" class="btn btn-primary">View All Features →</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ WHY CHOOSE -->
-<section class="why-section">
+<!-- ============ WHY CHOOSE (NEW) ============ -->
+<section class="why">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Why InstaDispatch</div>
-      <h2>Built to Grow With Your Business</h2>
-      <p>From startups running 50 deliveries a day to enterprises managing 50,000 — InstaDispatch scales without compromise.</p>
+    <div class="section-head reveal">
+      <div class="section-pill">Why InstaDispatch</div>
+      <h2>Why Businesses Choose Us</h2>
+      <p>Built to scale with your delivery operations — from startup to enterprise.</p>
     </div>
     <div class="why-grid">
       <div class="why-card reveal">
-        <div class="why-ico">🎯</div>
+        <div class="ico">🎯</div>
         <h3>All-in-One Platform</h3>
-        <p>Replace five fragmented tools with one unified system covering dispatch, routing, tracking, ePOD, finance, and analytics.</p>
-      </div>
-      <div class="why-card reveal reveal-delay-1">
-        <div class="why-ico">⚡</div>
-        <h3>Quick &amp; Easy Setup</h3>
-        <p>Get started in minutes with guided onboarding and an intuitive UI. No technical expertise or IT team required.</p>
-      </div>
-      <div class="why-card reveal reveal-delay-2">
-        <div class="why-ico">📈</div>
-        <h3>Scalable for Any Volume</h3>
-        <p>Whether you handle 50 or 50,000 deliveries a day, the platform scales horizontally without performance degradation.</p>
+        <p>Replace multiple tools with one unified system covering dispatch, routing, tracking, ePOD and analytics.</p>
       </div>
       <div class="why-card reveal">
-        <div class="why-ico">🌍</div>
+        <div class="ico">⚡</div>
+        <h3>Quick & Easy Setup</h3>
+        <p>Get started in minutes with guided onboarding and intuitive UI — no technical expertise required.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ico">📈</div>
+        <h3>Scalable for Any Volume</h3>
+        <p>Whether you handle 50 or 50,000 deliveries a day, our platform scales without performance loss.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ico">🌍</div>
         <h3>Global-Ready</h3>
-        <p>Multi-language, multi-currency support with deployments across 50+ countries. Built for international logistics operations.</p>
+        <p>Multi-language, multi-currency, and used across 50+ countries worldwide.</p>
       </div>
-      <div class="why-card reveal reveal-delay-1">
-        <div class="why-ico">🛡️</div>
-        <h3>Enterprise-Grade Security</h3>
-        <p>Cloud-based architecture with 99.9% guaranteed uptime, end-to-end encryption, and automatic backups.</p>
+      <div class="why-card reveal">
+        <div class="ico">🛡️</div>
+        <h3>Enterprise Security</h3>
+        <p>Cloud-based architecture with 99.9% uptime, encrypted data and reliable backups.</p>
       </div>
-      <div class="why-card reveal reveal-delay-2">
-        <div class="why-ico">🤝</div>
+      <div class="why-card reveal">
+        <div class="ico">🤝</div>
         <h3>Dedicated Support</h3>
-        <p>Dedicated account management, personalized onboarding sessions, and 24/7 customer support whenever you need it.</p>
+        <p>Get dedicated account management, onboarding sessions, and 24/7 customer support.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ INDUSTRIES -->
-<section class="industries-section">
+<!-- ============ INDUSTRIES ============ -->
+<section class="industries">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Industries</div>
+    <div class="section-head reveal">
+      <div class="section-pill">Industries</div>
       <h2>Industries We Serve</h2>
-      <p>Our delivery management platform is purpose-built for every vertical that moves goods from A to B.</p>
+      <p>Our vehicle route planning software works for all business types.</p>
     </div>
-    <div class="ind-grid">
+    <div class="industries-grid">
       <div class="ind-card reveal">
-        <div class="ind-thumb">📦</div>
-        <div class="ind-body"><h3>Courier, Express &amp; Parcel Delivery</h3></div>
-      </div>
-      <div class="ind-card reveal reveal-delay-1">
-        <div class="ind-thumb">🛒</div>
-        <div class="ind-body"><h3>E-Commerce Fulfillment</h3></div>
-      </div>
-      <div class="ind-card reveal reveal-delay-2">
-        <div class="ind-thumb">✈️</div>
-        <div class="ind-body"><h3>Freight Forwarding</h3></div>
+        <div class="ind-img">📦</div>
+        <h3>Courier, Express & Parcel Delivery</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-thumb">🛋️</div>
-        <div class="ind-body"><h3>Furniture &amp; Large Items Delivery</h3></div>
+        <div class="ind-img">🛒</div>
+        <h3>E-Commerce Delivery</h3>
       </div>
-      <div class="ind-card reveal reveal-delay-1">
-        <div class="ind-thumb">💐</div>
-        <div class="ind-body"><h3>Gifts, Flowers &amp; Cakes</h3></div>
+      <div class="ind-card reveal">
+        <div class="ind-img">✈️</div>
+        <h3>Freight Forwarding</h3>
       </div>
-      <div class="ind-card reveal reveal-delay-2">
-        <div class="ind-thumb">💊</div>
-        <div class="ind-body"><h3>Pharmacy &amp; Healthcare Delivery</h3></div>
+      <div class="ind-card reveal">
+        <div class="ind-img">🛋️</div>
+        <h3>Furniture Delivery</h3>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-img">💐</div>
+        <h3>Gifts, Flowers and Cakes Delivery</h3>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-img">💊</div>
+        <h3>Pharmacy & Healthcare Delivery</h3>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ INTEGRATIONS -->
-<section class="int-section" id="integrations">
+<!-- ============ STATS (NEW) ============ -->
+<section class="stats">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">Integrations</div>
-      <h2>Sell Anywhere. Ship with InstaDispatch.</h2>
-      <p>Connect your existing carriers, e-commerce channels, and warehouse systems seamlessly.</p>
+    <div class="section-head reveal">
+      <div class="section-pill">Our Impact</div>
+      <h2>Trusted by Leaders. Loved by Drivers.</h2>
+      <p>Numbers that speak for the impact we've created.</p>
     </div>
-    <div class="int-tabs">
-      <div class="int-tab active">📦 Carrier Integration</div>
-      <div class="int-tab">🛒 Channel Integration</div>
-      <div class="int-tab">🏬 WMS Integration</div>
-    </div>
-    <div class="int-logos reveal">
-      <div class="int-logo-box">FedEx</div>
-      <div class="int-logo-box">DSV</div>
-      <div class="int-logo-box">NORSK</div>
-      <div class="int-logo-box">Parcelforce</div>
-      <div class="int-logo-box">DPD</div>
-      <div class="int-logo-box">Palletways</div>
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="500">0</div>
+        <div class="stat-label">Businesses Served</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-label">Million Deliveries</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-label">Countries Worldwide</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="99">0</div>
+        <div class="stat-label">% Platform Uptime</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ APP -->
-<section class="app-section" id="app">
+<!-- ============ BRANDS ============ -->
+<section class="brands">
   <div class="container">
-    <div class="app-grid">
-      <div class="app-left reveal">
-        <div class="sec-eyebrow">Mobile Apps</div>
-        <h2>Powerful Apps for Drivers &amp; Managers</h2>
-        <p>Native Android and iOS applications built for speed, reliability, and simplicity — so your team can focus on delivering, not fumbling with tech.</p>
-        <div class="app-feature-list">
-          <div class="app-feature-item">
-            <div class="afl-ico">🧭</div>
-            <div>
-              <div class="afl-title">Turn-By-Turn Navigation</div>
-              <div class="afl-desc">Built-in route guidance optimized for delivery stops, not just driving.</div>
-            </div>
-          </div>
-          <div class="app-feature-item">
-            <div class="afl-ico">📵</div>
-            <div>
-              <div class="afl-title">Full Offline Mode</div>
-              <div class="afl-desc">Deliveries and POD data stored locally and synced when connectivity is restored.</div>
-            </div>
-          </div>
-          <div class="app-feature-item">
-            <div class="afl-ico">✍️</div>
-            <div>
-              <div class="afl-title">Digital POD Capture</div>
-              <div class="afl-desc">Signatures, photos, barcodes, OTPs — all captured and transmitted in real time.</div>
-            </div>
-          </div>
-        </div>
-        <div class="app-btns">
-          <a href="#" class="app-store-btn">
-            <span style="font-size:1.6rem">🍎</span>
-            <div><div class="asb-label">Download on the</div><div class="asb-store">App Store</div></div>
-          </a>
-          <a href="#" class="app-store-btn">
-            <span style="font-size:1.6rem">🤖</span>
-            <div><div class="asb-label">Get it on</div><div class="asb-store">Google Play</div></div>
-          </a>
+    <div class="brands-text reveal">
+      <div class="section-pill">Customer Stories</div>
+      <h2>Brands That Trust Us</h2>
+      <p>We push every boundary to ensure that InstaDispatch courier dispatch software brings efficiency to our client's business. For us every customer who comes on board must become a success story.</p>
+    </div>
+    <div class="brand-row">
+      <div class="brand-card reveal">Freight Finders</div>
+      <div class="brand-card reveal">Hitra Pošta</div>
+      <div class="brand-card reveal">GLAM Solutions</div>
+      <div class="brand-card reveal">RapidWheels</div>
+      <div class="brand-card reveal">Reflex Couriers</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP ============ -->
+<section class="app-section">
+  <div class="container app-grid">
+    <div class="app-visual reveal">
+      <div class="floating-ui fu1">
+        <div class="fc-icon green">📍</div>
+        <div class="fc-text">
+          <small>Live Tracking</small>
+          Active Now
         </div>
       </div>
-      <div class="app-right reveal reveal-delay-1">
-        <div class="app-phone-wrap">
-          <span class="app-phone-emoji">📱</span>
-          <div class="app-phone-tags">
-            <div class="app-phone-tag">Android &amp; iOS</div>
-            <div class="app-phone-tag">Offline Mode</div>
-            <div class="app-phone-tag">Real-Time Sync</div>
-            <div class="app-phone-tag">ePOD Capture</div>
+      <div class="floating-ui fu2">
+        <div class="fc-icon orange">✓</div>
+        <div class="fc-text">
+          <small>Delivered</small>
+          POD Captured
+        </div>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="phone-header">
+            <h4>Hello, Driver! 👋</h4>
+            <p>5 deliveries scheduled today</p>
+          </div>
+          <div class="phone-card">
+            <div class="pc-row">
+              <strong style="font-size:.75rem;color:var(--primary)">#ORD-2847</strong>
+              <span class="pc-status">Out for Delivery</span>
+            </div>
+            <h5>John Anderson</h5>
+            <p class="addr">📍 124 Baker Street, London</p>
+          </div>
+          <div class="phone-card">
+            <div class="pc-row">
+              <strong style="font-size:.75rem;color:var(--primary)">#ORD-2848</strong>
+              <span class="pc-status" style="background:#fef3c7;color:#92400e">Pending</span>
+            </div>
+            <h5>Sarah Williams</h5>
+            <p class="addr">📍 88 Oxford Road, Manchester</p>
+          </div>
+          <div class="phone-card">
+            <div class="pc-row">
+              <strong style="font-size:.75rem;color:var(--primary)">#ORD-2849</strong>
+              <span class="pc-status" style="background:#dbeafe;color:#1e40af">Picked Up</span>
+            </div>
+            <h5>Michael Chen</h5>
+            <p class="addr">📍 32 King Street, Birmingham</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="app-content reveal">
+      <div class="section-pill">Mobile Apps</div>
+      <h2>Get The App Now!</h2>
+      <p>Powerful mobile apps for drivers and managers — built for speed, simplicity, and reliability.</p>
+      <div class="app-feature">
+        <div class="ico">🚚</div>
+        <div>
+          <h3>Driver App</h3>
+          <p>Turn-by-turn navigation, offline mode, photo & signature capture for ePOD.</p>
+        </div>
+      </div>
+      <div class="app-feature">
+        <div class="ico">📊</div>
+        <div>
+          <h3>Manager Dashboard</h3>
+          <p>Live driver tracking, drag-and-drop dispatch board, real-time delivery insights.</p>
+        </div>
+      </div>
+      <div class="app-buttons">
+        <a href="#" class="app-btn"><span class="ico">🍎</span> App Store</a>
+        <a href="#" class="app-btn"><span class="ico">▶</span> Google Play</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ CONTACT CTA -->
-<section class="cta-section" id="contact">
-  <div class="container" style="padding:100px 32px;">
-    <div class="cta-inner">
-      <div>
-        <div style="display:inline-block;background:rgba(255,255,255,0.15);border-radius:100px;padding:7px 18px;font-size:13px;color:#fff;font-weight:500;margin-bottom:20px;">🚀 Get Started Today — Free Demo</div>
-        <h2>Ready to Transform Your Delivery Operations?</h2>
-        <p>InstaDispatch is a cloud-based system — you can get started in no time. Book a free personalized demo and see exactly how it fits your business.</p>
-        <div class="cta-btns">
-          <a href="#" class="btn btn-white">Schedule a Free Demo</a>
-          <a href="#" class="btn btn-outline-white">Chat With Us</a>
-        </div>
+<!-- ============ CONTACT CTA ============ -->
+<section class="contact-cta" id="contact">
+  <div class="container cta-grid">
+    <div class="reveal">
+      <div class="section-pill" style="background:rgba(255,255,255,.15);color:#fff">Get Started</div>
+      <h2>Get in touch, to know more</h2>
+      <p>InstaDispatch delivery management software is a cloud based system and you can get started in no time. Contact us today to get a demo.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Schedule a Demo →</a>
+        <a href="#" class="btn btn-white">💬 Chat With Us</a>
       </div>
-      <div class="cta-visual">📦</div>
     </div>
+    <div class="cta-image reveal">📦</div>
   </div>
 </section>
 
-<!-- ============================================================ FAQ -->
-<section class="faq-section">
+<!-- ============ FAQ ============ -->
+<section class="faq">
   <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow">FAQ</div>
+    <div class="section-head reveal">
+      <div class="section-pill">FAQ</div>
       <h2>Frequently Asked Questions</h2>
       <p>Everything you need to know about InstaDispatch.</p>
     </div>
-    <div class="faq-wrap">
+    <div class="faq-list">
       <div class="faq-item reveal">
-        <div class="faq-q">What is InstaDispatch? <span class="faq-icon">+</span></div>
+        <div class="faq-q">What is InstaDispatch? <span class="plus">+</span></div>
         <div class="faq-a"><p>InstaDispatch is a cloud-based delivery management software that helps courier companies, e-commerce businesses, and logistics providers automate dispatch, optimize routes, track drivers in real-time, and manage proof of delivery — all from one platform.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">How do I get an account? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>Simply book a demo or contact our sales team. We'll guide you through setup, onboarding, and full configuration based on your unique business needs.</p></div>
+        <div class="faq-q">How do I get an account? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Simply book a demo or contact our sales team. We'll guide you through setup, onboarding, and configuration based on your business needs.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">Does the InstaDispatch Mobile App work offline? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>Yes, our driver app fully supports offline mode. All deliveries and POD data are stored locally on the device and automatically synced once internet connectivity is restored.</p></div>
+        <div class="faq-q">Is there any specific telecom carrier supported by Instadispatch? <span class="plus">+</span></div>
+        <div class="faq-a"><p>InstaDispatch supports a wide range of global SMS and telecom providers. You can also configure your own gateway as per your region.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">Which platforms does the Driver App support? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>The InstaDispatch Driver App is available on both Android and iOS, supporting all modern OS versions on smartphones and tablets.</p></div>
+        <div class="faq-q">Does Instadispatch Mobile App work offline? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, our driver app supports offline mode. Deliveries and POD data are stored locally and synced automatically once internet connectivity is restored.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">Can InstaDispatch support my custom pricing structure? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>Yes, InstaDispatch offers fully customizable pricing rules — by zone, weight, distance, service type, and account-specific rates. Whatever your pricing model, we support it.</p></div>
+        <div class="faq-q">Which platform and version does the Driver App support? <span class="plus">+</span></div>
+        <div class="faq-a"><p>The InstaDispatch Driver App is available on both Android and iOS, supporting all modern OS versions.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">What integrations does InstaDispatch support? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>InstaDispatch integrates with major carriers (FedEx, DPD, DSV, Parcelforce, Palletways), e-commerce platforms (Shopify, WooCommerce, Magento), accounting tools, and offers open APIs for custom integration.</p></div>
+        <div class="faq-q">I have a unique pricing method. Will Instadispatch support the way I structure my pricing? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, InstaDispatch offers fully customizable pricing rules — including by zone, weight, distance, service type, and account-specific rates.</p></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-q">Does InstaDispatch offer a free demo? <span class="faq-icon">+</span></div>
-        <div class="faq-a"><p>Yes! Book a free personalized demo with our team to see exactly how InstaDispatch fits and optimizes your specific delivery operations.</p></div>
+        <div class="faq-q">Does InstaDispatch offer a free demo? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, you can book a free personalized demo with our team to see how InstaDispatch fits your delivery operations.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">What integrations does InstaDispatch support? <span class="plus">+</span></div>
+        <div class="faq-a"><p>InstaDispatch integrates with leading carriers (FedEx, DPD, DSV, Parcelforce, Palletways), e-commerce platforms (Shopify, WooCommerce, Magento), and accounting tools — plus open APIs for custom integration.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ BLOG -->
-<section class="blog-section" id="blog">
+<!-- ============ BLOG ============ -->
+<section class="blog" id="blog">
   <div class="container">
-    <div class="blog-header reveal">
-      <div class="sec-head">
-        <div class="sec-eyebrow">Our Insights</div>
-        <h2>Latest Posts &amp; Updates</h2>
+    <div class="blog-head reveal">
+      <div>
+        <div class="section-pill">Our Insights</div>
+        <h2>Latest Posts and Updates</h2>
       </div>
-      <a href="#" class="btn btn-ghost">View All Posts →</a>
+      <a href="#" class="btn btn-primary">View All Posts →</a>
     </div>
     <div class="blog-grid">
       <div class="blog-card reveal">
-        <div class="blog-thumb">📦</div>
-        <div class="blog-body">
-          <div class="blog-tag">Delivery Management Software</div>
-          <h3>Courier Exchange Integration: Manage Jobs, Drivers &amp; Tracking in One Place</h3>
-          <div class="blog-meta">📅 April 14, 2026 · InstaDispatch Team</div>
+        <div class="blog-img">📦</div>
+        <div class="blog-content">
+          <span class="blog-tag">Delivery Management</span>
+          <h3>Courier Exchange Integration Software: Manage Jobs, Drivers & Tracking</h3>
+          <div class="blog-meta">
+            <div class="avatar">ID</div>
+            <span>InstaDispatch · April 14, 2026</span>
+          </div>
         </div>
       </div>
-      <div class="blog-card reveal reveal-delay-1">
-        <div class="blog-thumb">🗺️</div>
-        <div class="blog-body">
-          <div class="blog-tag">Route Planning Software</div>
-          <h3>Smarter Delivery Scheduling with InstaDispatch Route Capacity Planner</h3>
-          <div class="blog-meta">📅 March 17, 2026 · InstaDispatch Team</div>
+      <div class="blog-card reveal">
+        <div class="blog-img">🗺️</div>
+        <div class="blog-content">
+          <span class="blog-tag">Route Planning</span>
+          <h3>Smarter Delivery Scheduling with Route Capacity Planner</h3>
+          <div class="blog-meta">
+            <div class="avatar">ID</div>
+            <span>InstaDispatch · March 17, 2026</span>
+          </div>
         </div>
       </div>
-      <div class="blog-card reveal reveal-delay-2">
-        <div class="blog-thumb">🚚</div>
-        <div class="blog-body">
-          <div class="blog-tag">Last-Mile Delivery</div>
-          <h3>Last-Mile Delivery in the UK: Key Challenges &amp; How Software Solves Them</h3>
-          <div class="blog-meta">📅 February 18, 2026 · InstaDispatch Team</div>
+      <div class="blog-card reveal">
+        <div class="blog-img">🚚</div>
+        <div class="blog-content">
+          <span class="blog-tag">Last-Mile Delivery</span>
+          <h3>Last-Mile Delivery in the UK: Key Challenges & How Delivery Software Helps</h3>
+          <div class="blog-meta">
+            <div class="avatar">ID</div>
+            <span>InstaDispatch · February 18, 2026</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ INTEGRATION BOTTOM CTA -->
-<div class="int-bottom-cta">
-  <div class="container">
-    <div class="int-cta-inner reveal">
-      <div>
-        <div class="sec-eyebrow" style="text-align:left;margin-bottom:8px;">Custom Integration</div>
-        <h2>Need a Custom Integration? Let's Talk.</h2>
-      </div>
-      <a href="#contact" class="btn btn-primary">Let's Connect →</a>
-    </div>
+<!-- ============ INTEGRATION CTA ============ -->
+<section class="int-cta">
+  <div class="container int-cta-wrap reveal">
+    <h2>Need Custom Integration? We Would Love To Discuss.</h2>
+    <a href="#contact" class="btn btn-white">Let's Connect →</a>
   </div>
-</div>
+</section>
 
-<!-- ============================================================ FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="footer-logo">Insta<span>Dispatch</span></div>
-        <p class="footer-desc">A powerful cloud-based courier dispatch and delivery management platform built for the modern logistics business — big or small.</p>
-        <div class="footer-contact-info">
+      <div class="footer-about">
+        <div class="logo" style="color:#fff">
+          <div class="logo-icon">⚡</div>
+          <span style="color:#fff">InstaDispatch</span>
+        </div>
+        <p>InstaDispatch is a powerful cloud-based courier dispatch software, which has been created keeping in mind all the small and big aspects of the courier industry.</p>
+        <div class="footer-contact">
           📞 +44 (0) 203-890-3158<br>
-          ✉️ info@instadispatch.com
+          ✉️ Info@Instadispatch.com
         </div>
         <div class="footer-social">
-          <a href="#" class="fsoc" aria-label="Facebook">f</a>
-          <a href="#" class="fsoc" aria-label="LinkedIn">in</a>
-          <a href="#" class="fsoc" aria-label="Twitter">x</a>
-          <a href="#" class="fsoc" aria-label="Instagram">ig</a>
-          <a href="#" class="fsoc" aria-label="WhatsApp">wa</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="WhatsApp">w</a>
         </div>
       </div>
       <div>
         <h4>Solutions</h4>
         <ul>
-          <li><a href="#">Same-Day Delivery Management</a></li>
-          <li><a href="#">Delivery Management Software</a></li>
+          <li><a href="#">Same-Day Delivery</a></li>
+          <li><a href="#">Delivery Management</a></li>
           <li><a href="#">E-Commerce Delivery</a></li>
           <li><a href="#">Delivery Driver App</a></li>
-          <li><a href="#">Freight Forwarding Software</a></li>
+          <li><a href="#">Freight Forwarding</a></li>
           <li><a href="#">Route Optimization</a></li>
         </ul>
       </div>
@@ -1579,15 +1500,15 @@ footer ul li a:hover { color:var(--orange); }
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">FAQs</a></li>
-          <li><a href="#">Android App</a></li>
-          <li><a href="#">iOS App</a></li>
+          <li><a href="#">Download Android App</a></li>
+          <li><a href="#">Download iOS App</a></li>
         </ul>
       </div>
       <div>
         <h4>Legal</h4>
         <ul>
           <li><a href="#">Acceptable Use Policy</a></li>
-          <li><a href="#">Data Processing Agreement</a></li>
+          <li><a href="#">Data Processing</a></li>
           <li><a href="#">Service Level Agreement</a></li>
           <li><a href="#">Cookie Policy</a></li>
           <li><a href="#">Privacy Policy</a></li>
@@ -1595,74 +1516,90 @@ footer ul li a:hover { color:var(--orange); }
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 InstaDispatch. All rights reserved.</span>
-      <div style="display:flex;gap:20px;flex-wrap:wrap;">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Cookie Settings</a>
-      </div>
-    </div>
+    <div class="footer-bottom">© 2025 InstaDispatch. All rights reserved.</div>
   </div>
 </footer>
 
 <script>
-/* ---- FAQ Accordion ---- */
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+// Navbar scroll effect
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>20)navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')});
+    item.classList.toggle('active');
   });
 });
 
-/* ---- Integration Tabs ---- */
-document.querySelectorAll('.int-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.int-tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
+// Tabs
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
   });
 });
 
-/* ---- Mobile Menu ---- */
-const toggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-let menuOpen = false;
-toggle?.addEventListener('click', () => {
-  menuOpen = !menuOpen;
-  if (menuOpen) {
-    navLinks.style.cssText = `
-      display:flex;flex-direction:column;position:fixed;
-      top:65px;left:0;right:0;background:rgba(5,6,15,0.97);
-      backdrop-filter:blur(20px);padding:24px 32px;
-      border-bottom:1px solid rgba(232,228,220,0.08);
-      gap:20px;z-index:999;
-    `;
-  } else {
-    navLinks.style.display = 'none';
-  }
-});
-
-/* ---- Scroll Reveal ---- */
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+// Scroll Reveal
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => observer.observe(el));
+},{threshold:.12});
+reveals.forEach(r=>io.observe(r));
 
-/* ---- Navbar scroll effect ---- */
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) {
-    navbar.style.background = 'rgba(5,6,15,0.98)';
-  } else {
-    navbar.style.background = 'rgba(5,6,15,0.85)';
+// Animated Counter
+const counters=document.querySelectorAll('.stat-num');
+const counterIO=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target;
+      const target=+el.dataset.target;
+      const duration=2000;
+      const start=performance.now();
+      const animate=(now)=>{
+        const progress=Math.min((now-start)/duration,1);
+        const eased=1-Math.pow(1-progress,3);
+        const value=Math.floor(eased*target);
+        if(target>=100)el.textContent=value+'+';
+        else if(el.nextElementSibling.textContent.includes('Million'))el.textContent=value+'M+';
+        else if(el.nextElementSibling.textContent.includes('%'))el.textContent=value+'.9%';
+        else el.textContent=value+'+';
+        if(progress<1)requestAnimationFrame(animate);
+      };
+      requestAnimationFrame(animate);
+      counterIO.unobserve(el);
+    }
+  });
+},{threshold:.5});
+counters.forEach(c=>counterIO.observe(c));
+
+// Mobile Menu
+const toggle=document.querySelector('.menu-toggle');
+const navLinks=document.querySelector('.nav-links');
+toggle?.addEventListener('click',()=>{
+  if(navLinks.style.display==='flex'){
+    navLinks.style.display='';
+  }else{
+    navLinks.style.display='flex';
+    navLinks.style.flexDirection='column';
+    navLinks.style.position='absolute';
+    navLinks.style.top='75px';
+    navLinks.style.left='0';
+    navLinks.style.right='0';
+    navLinks.style.background='#fff';
+    navLinks.style.padding='24px';
+    navLinks.style.gap='16px';
+    navLinks.style.boxShadow='0 8px 30px rgba(0,0,0,.1)';
   }
 });
 </script>
