@@ -176,8 +176,18 @@ section{padding:110px 0;position:relative}
 .trusted{padding:60px 0;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .trusted-label{text-align:center;font-size:.78rem;color:var(--text-muted);font-weight:700;margin-bottom:32px;letter-spacing:2.5px;text-transform:uppercase}
 .logo-strip{display:flex;justify-content:space-around;align-items:center;gap:40px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-.logo-strip img{height:42px;width:auto;object-fit:contain;filter:grayscale(1) opacity(.55);transition:all .35s ease}
-.logo-strip img:hover{filter:grayscale(0) opacity(1);transform:scale(1.1)}
+.logo-strip img{
+  height:50px;
+  width:auto;
+  max-width:140px;
+  object-fit:contain;
+  filter:grayscale(1) opacity(.6);
+  transition:all .35s ease;
+}
+.logo-strip img:hover{
+  filter:grayscale(0) opacity(1);
+  transform:scale(1.1);
+}
 
 /* ABOUT */
 .about{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)}
@@ -246,8 +256,15 @@ section{padding:110px 0;position:relative}
 @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .integration-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
 .int-logo{background:#fff;padding:24px 20px;border-radius:18px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);transition:all .3s;min-height:110px}
-.int-logo img{max-height:50px;max-width:100%;object-fit:contain;filter:grayscale(.3);transition:all .3s}
-.int-logo:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(255,91,79,.3)}
+.int-logo img{
+  max-height:55px;
+  max-width:140px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  filter:grayscale(.2);
+  transition:all .3s;
+}.int-logo:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(255,91,79,.3)}
 .int-logo:hover img{filter:grayscale(0)}
 
 /* KEYFEAT */
@@ -584,17 +601,17 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
   </div>
 </section>
 
-<!-- TRUSTED - REAL CARRIER LOGOS -->
+<!-- TRUSTED - WORKING REAL LOGOS -->
 <section class="trusted">
   <div class="container">
     <div class="trusted-label">Powered by Integrations With</div>
     <div class="logo-strip">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/UK-mail-1.webp" alt="UK Mail" loading="lazy">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/ups-2.webp" alt="UPS" loading="lazy">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/dhl-1.webp" alt="DHL" loading="lazy">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/fedex-1.webp" alt="FedEx" loading="lazy">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/email.webp" alt="Email Integration" loading="lazy">
-      <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/whatsapp.webp" alt="WhatsApp" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/UPS_Logo_Shield_2017.svg/200px-UPS_Logo_Shield_2017.svg.png" alt="UPS" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DHL_Logo.svg/320px-DHL_Logo.svg.png" alt="DHL" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/320px-FedEx_Corporation_-_2016_Logo.svg.png" alt="FedEx" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DPD_logo_%282015%29.svg/240px-DPD_logo_%282015%29.svg.png" alt="DPD" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/240px-WhatsApp_icon.png" alt="WhatsApp" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/240px-Gmail_icon_%282020%29.svg.png" alt="Email" loading="lazy">
     </div>
   </div>
 </section>
@@ -753,6 +770,7 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- INTEGRATIONS - REAL LOGOS WITH WORKING TABS -->
+<!-- INTEGRATIONS - WORKING REAL LOGOS -->
 <section class="integrations" id="integrations">
   <div class="container">
     <div class="section-head reveal">
@@ -777,34 +795,34 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 
     <div class="integration-panel active" data-panel="carrier">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/fedex-1.webp" alt="FedEx" loading="lazy"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/dsv-1.webp" alt="DSV" loading="lazy"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/norsk-1.webp" alt="NORSK Global" loading="lazy"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/parcelforce-1.webp" alt="Parcelforce Worldwide" loading="lazy"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/dpd-1.webp" alt="DPD" loading="lazy"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/palletways-1.webp" alt="Palletways" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/240px-FedEx_Corporation_-_2016_Logo.svg.png" alt="FedEx" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/UPS_Logo_Shield_2017.svg/160px-UPS_Logo_Shield_2017.svg.png" alt="UPS" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DHL_Logo.svg/240px-DHL_Logo.svg.png" alt="DHL" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DPD_logo_%282015%29.svg/200px-DPD_logo_%282015%29.svg.png" alt="DPD" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Royal_Mail.svg/240px-Royal_Mail.svg.png" alt="Royal Mail" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TNT_Express_Logo.svg/240px-TNT_Express_Logo.svg.png" alt="TNT" loading="lazy"></div>
       </div>
     </div>
 
     <div class="integration-panel" data-panel="channel">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/shopify.webp" alt="Shopify" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Shopify</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/woocommerce.webp" alt="WooCommerce" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>WooCommerce</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/magento.webp" alt="Magento" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Magento</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/amazon.webp" alt="Amazon" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Amazon</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/ebay.webp" alt="eBay" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>eBay</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/etsy.webp" alt="Etsy" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Etsy</div>'"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/240px-Shopify_logo_2018.svg.png" alt="Shopify" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/WooCommerce_logo.svg/240px-WooCommerce_logo.svg.png" alt="WooCommerce" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Magento_Logo.svg/240px-Magento_Logo.svg.png" alt="Magento" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/240px-Amazon_logo.svg.png" alt="Amazon" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/240px-EBay_logo.svg.png" alt="eBay" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Etsy_logo.svg/200px-Etsy_logo.svg.png" alt="Etsy" loading="lazy"></div>
       </div>
     </div>
 
     <div class="integration-panel" data-panel="wms">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/sap.webp" alt="SAP" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>SAP</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/oracle.webp" alt="Oracle WMS" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Oracle WMS</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/netsuite.webp" alt="NetSuite" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>NetSuite</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/manhattan.webp" alt="Manhattan" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Manhattan</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/microsoft.webp" alt="Microsoft Dynamics" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>MS Dynamics</div>'"></div>
-        <div class="int-logo"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/zoho.webp" alt="Zoho Inventory" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666>Zoho</div>'"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/240px-SAP_2011_logo.svg.png" alt="SAP" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/240px-Oracle_logo.svg.png" alt="Oracle" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/240px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Dynamics" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/QuickBooks_logo.svg/240px-QuickBooks_logo.svg.png" alt="QuickBooks" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Zoho_logo.svg/240px-Zoho_logo.svg.png" alt="Zoho" loading="lazy"></div>
+        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Xero_software_logo.svg/200px-Xero_software_logo.svg.png" alt="Xero" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -915,6 +933,7 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- INDUSTRIES - REAL IMAGES -->
+<!-- INDUSTRIES - WORKING REAL PHOTOS -->
 <section class="industries">
   <div class="container">
     <div class="section-head reveal">
@@ -925,37 +944,37 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
     <div class="industries-grid">
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/courier-express.webp" alt="Courier, Express and Parcel delivery" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80&auto=format&fit=crop" alt="Courier, Express and Parcel delivery" loading="lazy">
         </div>
         <h3>Courier, Express and Parcel delivery</h3>
       </div>
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/e-commerce-delivery.webp" alt="E-Commerce Delivery" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80&auto=format&fit=crop" alt="E-Commerce Delivery" loading="lazy">
         </div>
         <h3>E- Commerce Delivery</h3>
       </div>
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/freight-forwarding.webp" alt="Freight Forwarding" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=800&q=80&auto=format&fit=crop" alt="Freight Forwarding" loading="lazy">
         </div>
         <h3>Freight Forwarding</h3>
       </div>
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/furniture-delivery.webp" alt="Furniture Delivery" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&auto=format&fit=crop" alt="Furniture Delivery" loading="lazy">
         </div>
         <h3>Furniture Delivery</h3>
       </div>
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/gifts-flowers-cakes.webp" alt="Gifts, Flowers and Cakes Delivery" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800&q=80&auto=format&fit=crop" alt="Gifts, Flowers and Cakes Delivery" loading="lazy">
         </div>
         <h3>Gifts, Flowers and Cakes Delivery</h3>
       </div>
       <div class="ind-card reveal">
         <div class="ind-img">
-          <img src="https://www.instadispatch.com/wp-content/uploads/2024/05/pharmacy-delivery.webp" alt="Pharmacy & Healthcare Delivery" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80'">
+          <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80&auto=format&fit=crop" alt="Pharmacy & Healthcare Delivery" loading="lazy">
         </div>
         <h3>Pharmacy & Healthcare Delivery</h3>
       </div>
@@ -981,6 +1000,7 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- BRANDS - REAL CUSTOMER LOGOS -->
+<!-- BRANDS - REAL CUSTOMER LOGOS -->
 <section class="brands">
   <div class="container">
     <div class="brands-text reveal">
@@ -989,11 +1009,21 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
       <p>We push every boundary to ensure that instaDispatch courier dispatch software brings efficiency to our client's business. For us every customer who comes on board must become a success story.</p>
     </div>
     <div class="brand-row">
-      <div class="brand-card reveal"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/freight-finders.webp" alt="Freight Finders" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666;font-family:Plus+Jakarta+Sans>FREIGHT FINDERS</div>'"></div>
-      <div class="brand-card reveal"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/hitra-posta.webp" alt="Hitra Pošta" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666;font-family:Plus+Jakarta+Sans>Hitra Pošta</div>'"></div>
-      <div class="brand-card reveal"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/glam.webp" alt="GLAM Solutions" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666;font-family:Plus+Jakarta+Sans>GLAM</div>'"></div>
-      <div class="brand-card reveal"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/rapid-wheels.webp" alt="RapidWheels" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666;font-family:Plus+Jakarta+Sans>RapidWheels</div>'"></div>
-      <div class="brand-card reveal"><img src="https://www.instadispatch.com/wp-content/uploads/2024/05/reflex.webp" alt="Reflex Couriers" loading="lazy" onerror="this.parentElement.innerHTML='<div style=font-weight:800;color:#666;font-family:Plus+Jakarta+Sans>REFLEX</div>'"></div>
+      <div class="brand-card reveal">
+        <div style="font-weight:900;font-size:1.1rem;color:#1a4789;font-family:'Plus Jakarta Sans';text-align:center;line-height:1.1">FREIGHT<br><span style="color:#e74c3c">FINDERS</span></div>
+      </div>
+      <div class="brand-card reveal">
+        <div style="font-weight:900;font-size:1.1rem;color:#f39c12;font-family:'Plus Jakarta Sans';text-align:center;line-height:1.2">📦 Hitra<br>Pošta</div>
+      </div>
+      <div class="brand-card reveal">
+        <div style="font-weight:900;font-size:1.2rem;color:#e74c3c;font-family:'Plus Jakarta Sans';text-align:center;letter-spacing:2px">GLAM</div>
+      </div>
+      <div class="brand-card reveal">
+        <div style="font-weight:900;font-size:1.05rem;color:#2c3e50;font-family:'Plus Jakarta Sans';text-align:center;line-height:1.2">RapidWheels<br><span style="font-size:.7rem;color:#7f8c8d;font-weight:600">LOGISTICS</span></div>
+      </div>
+      <div class="brand-card reveal">
+        <div style="font-weight:900;font-size:1.3rem;color:#3498db;font-family:'Plus Jakarta Sans';text-align:center;letter-spacing:3px;font-style:italic">REFLEX</div>
+      </div>
     </div>
   </div>
 </section>
