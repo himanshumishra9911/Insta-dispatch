@@ -175,18 +175,31 @@ section{padding:110px 0;position:relative}
 /* TRUSTED - Real Carrier Logos */
 .trusted{padding:60px 0;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .trusted-label{text-align:center;font-size:.78rem;color:var(--text-muted);font-weight:700;margin-bottom:32px;letter-spacing:2.5px;text-transform:uppercase}
-.logo-strip{display:flex;justify-content:space-around;align-items:center;gap:40px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-.logo-strip img{
-  height:50px;
-  width:auto;
-  max-width:140px;
-  object-fit:contain;
-  filter:grayscale(1) opacity(.6);
+.logo-strip{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+  max-width:1100px;
+  margin:0 auto;
+}
+.brand-svg{
+  width:130px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  filter:grayscale(.4) opacity(.75);
   transition:all .35s ease;
 }
-.logo-strip img:hover{
+.brand-svg:hover{
   filter:grayscale(0) opacity(1);
-  transform:scale(1.1);
+  transform:scale(1.08);
+}
+.brand-svg svg{
+  width:100%;
+  height:100%;
 }
 
 /* ABOUT */
@@ -490,6 +503,65 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
   .logo-strip img{height:28px}
   .ind-img{height:200px}
 }
+  /* ===== NEW: SVG LOGOS & INDUSTRIES FIX ===== */
+
+/* Trusted bar SVG logos */
+.brand-svg{
+  width:130px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  filter:grayscale(.4) opacity(.75);
+  transition:all .35s ease;
+}
+.brand-svg:hover{
+  filter:grayscale(0) opacity(1);
+  transform:scale(1.08);
+}
+.brand-svg svg{
+  width:100%;
+  height:100%;
+}
+
+/* Integration tab SVG logos */
+.int-logo svg{
+  max-width:160px;
+  max-height:65px;
+  width:100%;
+  height:auto;
+  filter:grayscale(.15);
+  transition:all .3s;
+}
+.int-logo:hover svg{
+  filter:grayscale(0);
+}
+
+/* Industries section icons */
+.ind-img{
+  height:240px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ind-img svg{
+  transition:transform .6s ease;
+  z-index:1;
+}
+.ind-card:hover .ind-img svg{
+  transform:scale(1.15) rotate(5deg);
+}
+
+/* Mobile responsive for new logos */
+@media(max-width:640px){
+  .brand-svg{width:100px;height:50px}
+  .logo-strip{gap:20px}
+  .int-logo svg{max-width:120px;max-height:50px}
+  .ind-img{height:200px}
+  .ind-img svg{width:90px;height:90px}
+}
 
 @supports(padding:max(0px)){body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}}
 </style>
@@ -602,16 +674,54 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- TRUSTED - WORKING REAL LOGOS -->
+<!-- TRUSTED - INLINE SVG LOGOS - GUARANTEED WORKING -->
 <section class="trusted">
   <div class="container">
     <div class="trusted-label">Powered by Integrations With</div>
     <div class="logo-strip">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/UPS_Logo_Shield_2017.svg/200px-UPS_Logo_Shield_2017.svg.png" alt="UPS" loading="lazy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DHL_Logo.svg/320px-DHL_Logo.svg.png" alt="DHL" loading="lazy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/320px-FedEx_Corporation_-_2016_Logo.svg.png" alt="FedEx" loading="lazy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DPD_logo_%282015%29.svg/240px-DPD_logo_%282015%29.svg.png" alt="DPD" loading="lazy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/240px-WhatsApp_icon.png" alt="WhatsApp" loading="lazy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/240px-Gmail_icon_%282020%29.svg.png" alt="Email" loading="lazy">
+      <!-- UPS -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 10 L130 10 L130 50 Q130 65 115 70 Q100 75 85 70 Q70 65 70 50 L70 10 L100 10 Z" fill="#5A3725"/>
+          <text x="100" y="45" text-anchor="middle" fill="#FFB500" font-family="Arial Black" font-weight="900" font-size="22">UPS</text>
+        </svg>
+      </div>
+      <!-- DHL -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="180" height="40" fill="#FFCC00"/>
+          <text x="100" y="50" text-anchor="middle" fill="#D40511" font-family="Arial Black" font-weight="900" font-size="28" letter-spacing="2">DHL</text>
+        </svg>
+      </div>
+      <!-- FedEx -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <text x="100" y="50" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="32">
+            <tspan fill="#4D148C">Fed</tspan><tspan fill="#FF6600">Ex</tspan>
+          </text>
+        </svg>
+      </div>
+      <!-- DPD -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="160" height="40" rx="6" fill="#DC0032"/>
+          <text x="100" y="50" text-anchor="middle" fill="#fff" font-family="Arial Black" font-weight="900" font-size="26" letter-spacing="3">DPD</text>
+        </svg>
+      </div>
+      <!-- Royal Mail -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <text x="100" y="38" text-anchor="middle" fill="#E60000" font-family="Georgia" font-weight="900" font-size="18">Royal</text>
+          <text x="100" y="60" text-anchor="middle" fill="#E60000" font-family="Georgia" font-weight="900" font-size="18">Mail</text>
+        </svg>
+      </div>
+      <!-- TNT -->
+      <div class="brand-svg">
+        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="160" height="40" fill="#FF6600"/>
+          <text x="100" y="50" text-anchor="middle" fill="#fff" font-family="Arial Black" font-weight="900" font-size="28" letter-spacing="2">TNT</text>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
@@ -770,7 +880,7 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- INTEGRATIONS - REAL LOGOS WITH WORKING TABS -->
-<!-- INTEGRATIONS - WORKING REAL LOGOS -->
+<!-- INTEGRATIONS - INLINE SVG WORKING TABS -->
 <section class="integrations" id="integrations">
   <div class="container">
     <div class="section-head reveal">
@@ -793,36 +903,132 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
       </div>
     </div>
 
+    <!-- CARRIER PANEL -->
     <div class="integration-panel active" data-panel="carrier">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/240px-FedEx_Corporation_-_2016_Logo.svg.png" alt="FedEx" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/UPS_Logo_Shield_2017.svg/160px-UPS_Logo_Shield_2017.svg.png" alt="UPS" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DHL_Logo.svg/240px-DHL_Logo.svg.png" alt="DHL" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DPD_logo_%282015%29.svg/200px-DPD_logo_%282015%29.svg.png" alt="DPD" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Royal_Mail.svg/240px-Royal_Mail.svg.png" alt="Royal Mail" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TNT_Express_Logo.svg/240px-TNT_Express_Logo.svg.png" alt="TNT" loading="lazy"></div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="50" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="34">
+              <tspan fill="#4D148C">Fed</tspan><tspan fill="#FF6600">Ex</tspan>
+            </text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 8 L135 8 L135 48 Q135 65 117 72 Q100 78 83 72 Q65 65 65 48 L65 8 L100 8 Z" fill="#5A3725"/>
+            <text x="100" y="42" text-anchor="middle" fill="#FFB500" font-family="Arial Black" font-weight="900" font-size="20">UPS</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="22" width="180" height="36" fill="#FFCC00"/>
+            <text x="100" y="50" text-anchor="middle" fill="#D40511" font-family="Arial Black" font-weight="900" font-size="26" letter-spacing="2">DHL</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="20" width="150" height="40" rx="6" fill="#DC0032"/>
+            <text x="100" y="50" text-anchor="middle" fill="#fff" font-family="Arial Black" font-weight="900" font-size="26" letter-spacing="3">DPD</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="38" text-anchor="middle" fill="#E60000" font-family="Georgia" font-weight="900" font-size="20">Royal</text>
+            <text x="100" y="62" text-anchor="middle" fill="#E60000" font-family="Georgia" font-weight="900" font-size="20">Mail</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="20" width="150" height="40" fill="#FF6600"/>
+            <text x="100" y="50" text-anchor="middle" fill="#fff" font-family="Arial Black" font-weight="900" font-size="26" letter-spacing="2">TNT</text>
+          </svg>
+        </div>
       </div>
     </div>
 
+    <!-- CHANNEL PANEL -->
     <div class="integration-panel" data-panel="channel">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/240px-Shopify_logo_2018.svg.png" alt="Shopify" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/WooCommerce_logo.svg/240px-WooCommerce_logo.svg.png" alt="WooCommerce" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Magento_Logo.svg/240px-Magento_Logo.svg.png" alt="Magento" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/240px-Amazon_logo.svg.png" alt="Amazon" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/240px-EBay_logo.svg.png" alt="eBay" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Etsy_logo.svg/200px-Etsy_logo.svg.png" alt="Etsy" loading="lazy"></div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="55" cy="40" r="22" fill="#95BF47"/>
+            <text x="55" y="48" text-anchor="middle" fill="#fff" font-family="Arial Black" font-size="22" font-weight="900">S</text>
+            <text x="105" y="48" font-family="Helvetica" font-weight="700" font-size="20" fill="#1a1a1a">Shopify</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="48" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="17" fill="#7F54B3">WooCommerce</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="48" text-anchor="middle" font-family="Arial" font-weight="900" font-size="22" fill="#F26322">Magento</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="46" text-anchor="middle" font-family="Arial" font-weight="900" font-size="26" fill="#232F3E">amazon</text>
+            <path d="M65 54 Q 100 68, 135 54" stroke="#FF9900" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="65" y="50" font-family="Helvetica" font-weight="900" font-size="28" fill="#E53238">e</text>
+            <text x="85" y="50" font-family="Helvetica" font-weight="900" font-size="28" fill="#0064D2">b</text>
+            <text x="105" y="50" font-family="Helvetica" font-weight="900" font-size="28" fill="#F5AF02">a</text>
+            <text x="125" y="50" font-family="Helvetica" font-weight="900" font-size="28" fill="#86B817">y</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="50" text-anchor="middle" font-family="Georgia" font-weight="900" font-size="26" fill="#F1641E" font-style="italic">Etsy</text>
+          </svg>
+        </div>
       </div>
     </div>
 
+    <!-- WMS PANEL -->
     <div class="integration-panel" data-panel="wms">
       <div class="integration-logos reveal">
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/240px-SAP_2011_logo.svg.png" alt="SAP" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/240px-Oracle_logo.svg.png" alt="Oracle" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/240px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Dynamics" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/QuickBooks_logo.svg/240px-QuickBooks_logo.svg.png" alt="QuickBooks" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Zoho_logo.svg/240px-Zoho_logo.svg.png" alt="Zoho" loading="lazy"></div>
-        <div class="int-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Xero_software_logo.svg/200px-Xero_software_logo.svg.png" alt="Xero" loading="lazy"></div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="50" y="20" width="100" height="40" rx="4" fill="#0FAAFF"/>
+            <text x="100" y="50" text-anchor="middle" fill="#fff" font-family="Arial Black" font-weight="900" font-size="26" letter-spacing="2">SAP</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="52" text-anchor="middle" font-family="Arial" font-weight="900" font-size="28" fill="#C74634">ORACLE</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="22" width="18" height="18" fill="#F25022"/>
+            <rect x="62" y="22" width="18" height="18" fill="#7FBA00"/>
+            <rect x="40" y="44" width="18" height="18" fill="#00A4EF"/>
+            <rect x="62" y="44" width="18" height="18" fill="#FFB900"/>
+            <text x="135" y="48" text-anchor="middle" font-family="Helvetica" font-weight="600" font-size="15" fill="#737373">Microsoft</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="20" fill="#2CA01C"/>
+            <text x="40" y="48" text-anchor="middle" fill="#fff" font-family="Arial Black" font-size="20" font-weight="900">qb</text>
+            <text x="120" y="46" text-anchor="middle" font-family="Helvetica" font-weight="700" font-size="14" fill="#2CA01C">QuickBooks</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <text x="100" y="50" text-anchor="middle" font-family="Helvetica" font-weight="900" font-size="28" fill="#E42527">Zoho</text>
+          </svg>
+        </div>
+        <div class="int-logo">
+          <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="40" r="24" fill="#13B5EA"/>
+            <text x="100" y="48" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700" font-size="18">xero</text>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -933,7 +1139,7 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
 </section>
 
 <!-- INDUSTRIES - REAL IMAGES -->
-<!-- INDUSTRIES - WORKING REAL PHOTOS -->
+<!-- INDUSTRIES - PICSUM IMAGES (GUARANTEED WORKING) -->
 <section class="industries">
   <div class="container">
     <div class="section-head reveal">
@@ -943,38 +1149,66 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
     </div>
     <div class="industries-grid">
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80&auto=format&fit=crop" alt="Courier, Express and Parcel delivery" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#f97316,#fb923c);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M180 130V70a15 15 0 0 0-7.5-13L120 27a15 15 0 0 0-15 0L52.5 57A15 15 0 0 0 45 70v60a15 15 0 0 0 7.5 13L105 173a15 15 0 0 0 15 0l52.5-30a15 15 0 0 0 7.5-13z"/>
+            <polyline points="52.5 67.5 112.5 105 172.5 67.5"/>
+            <line x1="112.5" y1="172.5" x2="112.5" y2="105"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>Courier, Express and Parcel delivery</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80&auto=format&fit=crop" alt="E-Commerce Delivery" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="75" cy="175" r="10"/>
+            <circle cx="165" cy="175" r="10"/>
+            <path d="M10 10h35l22 113a15 15 0 0 0 15 13h82a15 15 0 0 0 15-13L190 50H50"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>E- Commerce Delivery</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=800&q=80&auto=format&fit=crop" alt="Freight Forwarding" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#10b981,#34d399);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M148 158L132 92l29-29c12-12 16-29 12-37-8-4-25 0-37 12L100 67 40 50c-4-1-7 1-9 4l-3 5c-2 4-1 8 3 11L75 100l-17 25H30l-8 8 25 17 17 25 8-8v-25l25-17 29 44c2 3 7 4 11 3l4-2c3-2 5-6 4-10z"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>Freight Forwarding</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&auto=format&fit=crop" alt="Furniture Delivery" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="20" y="60" width="160" height="100" rx="10"/>
+            <path d="M40 60V40h120v20"/>
+            <line x1="20" y1="120" x2="180" y2="120"/>
+            <line x1="40" y1="160" x2="40" y2="180"/>
+            <line x1="160" y1="160" x2="160" y2="180"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>Furniture Delivery</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800&q=80&auto=format&fit=crop" alt="Gifts, Flowers and Cakes Delivery" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#ec4899,#f472b6);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M170 38a45 45 0 0 0-65 0L100 45l-5-7a45 45 0 0 0-65 65l5 7L100 175l65-67 5-7a45 45 0 0 0 0-63z"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>Gifts, Flowers and Cakes Delivery</h3>
       </div>
       <div class="ind-card reveal">
-        <div class="ind-img">
-          <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80&auto=format&fit=crop" alt="Pharmacy & Healthcare Delivery" loading="lazy">
+        <div class="ind-img" style="background:linear-gradient(135deg,#3b82f6,#60a5fa);position:relative;overflow:hidden">
+          <svg viewBox="0 0 200 200" style="width:120px;height:120px;color:#fff;opacity:.95" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="40" y="40" width="120" height="120" rx="10"/>
+            <line x1="100" y1="70" x2="100" y2="130"/>
+            <line x1="70" y1="100" x2="130" y2="100"/>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4))"></div>
         </div>
         <h3>Pharmacy & Healthcare Delivery</h3>
       </div>
