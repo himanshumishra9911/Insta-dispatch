@@ -620,7 +620,203 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
   .ind-overlay{width:42px;height:42px;bottom:14px;right:14px}
   .ind-overlay svg{width:20px;height:20px}
 }
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials{
+  background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);
+  position:relative;
+  overflow:hidden;
+}
+.testimonials::before{
+  content:"";
+  position:absolute;
+  top:10%;
+  right:-200px;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  background:var(--grad-accent);
+  opacity:.08;
+  filter:blur(100px);
+  z-index:0;
+}
+.testimonials .container{position:relative;z-index:1}
 
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+  margin-bottom:60px;
+}
+
+.testimonial-card{
+  background:#fff;
+  padding:36px 30px;
+  border-radius:24px;
+  border:1px solid var(--border);
+  transition:all .4s cubic-bezier(.4,0,.2,1);
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+.testimonial-card:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-lg);
+  border-color:rgba(255,91,79,.2);
+}
+.testimonial-card.featured{
+  background:linear-gradient(135deg,#fff 0%,#fff8f7 100%);
+  border-color:rgba(255,91,79,.3);
+  box-shadow:0 20px 50px rgba(255,91,79,.12);
+  transform:translateY(-10px);
+}
+.testimonial-card.featured:hover{
+  transform:translateY(-16px);
+  box-shadow:0 30px 70px rgba(255,91,79,.2);
+}
+
+.t-badge{
+  position:absolute;
+  top:-12px;
+  right:24px;
+  background:var(--grad-accent);
+  color:#fff;
+  padding:6px 14px;
+  border-radius:100px;
+  font-size:.7rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  box-shadow:0 8px 20px rgba(255,91,79,.4);
+}
+
+.t-stars{
+  display:flex;
+  gap:4px;
+  margin-bottom:20px;
+}
+.t-stars svg{
+  width:18px;
+  height:18px;
+}
+
+.t-text{
+  font-size:1rem;
+  color:var(--text-2);
+  line-height:1.7;
+  margin-bottom:28px;
+  flex-grow:1;
+  font-weight:500;
+}
+
+.t-author{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+}
+.t-author img{
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+  box-shadow:0 4px 12px rgba(10,4,32,.1);
+  flex-shrink:0;
+}
+.t-info{
+  flex:1;
+  min-width:0;
+}
+.t-name{
+  font-weight:800;
+  color:var(--primary);
+  font-size:1rem;
+  font-family:'Plus Jakarta Sans';
+  margin-bottom:2px;
+}
+.t-role{
+  font-size:.82rem;
+  color:var(--text-muted);
+  font-weight:500;
+}
+
+/* Bottom Stats Bar */
+.t-bottom-bar{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:32px 40px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  gap:30px;
+  box-shadow:var(--shadow);
+  flex-wrap:wrap;
+}
+.t-stat{
+  text-align:center;
+  min-width:120px;
+}
+.t-stat-num{
+  font-size:2rem;
+  font-weight:900;
+  font-family:'Plus Jakarta Sans';
+  background:var(--grad-accent);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  line-height:1;
+}
+.t-stat-label{
+  font-size:.85rem;
+  color:var(--text-muted);
+  margin-top:6px;
+  font-weight:600;
+}
+.t-divider{
+  width:1px;
+  height:40px;
+  background:var(--border);
+}
+
+/* Responsive */
+@media(max-width:992px){
+  .testimonials-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .testimonial-card.featured{
+    transform:translateY(0);
+  }
+  .testimonial-card.featured:hover{
+    transform:translateY(-8px);
+  }
+  .t-bottom-bar{
+    padding:24px 20px;
+    gap:20px;
+  }
+  .t-stat-num{font-size:1.7rem}
+}
+
+@media(max-width:640px){
+  .testimonials-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .testimonial-card{padding:28px 24px}
+  .t-divider{display:none}
+  .t-bottom-bar{
+    flex-direction:column;
+    gap:20px;
+    padding:30px 20px;
+  }
+  .t-stat{
+    padding:12px 0;
+    border-bottom:1px solid var(--border);
+    width:100%;
+  }
+  .t-stat:last-child{border-bottom:none}
+}
 @supports(padding:max(0px)){body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}}
 </style>
 </head>
@@ -1339,6 +1535,103 @@ footer ul li a:hover{color:var(--accent);padding-left:4px}
         <div style="font-weight:900;font-size:1.3rem;color:#3498db;font-family:'Plus Jakarta Sans';text-align:center;letter-spacing:3px;font-style:italic">REFLEX</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS - CUSTOMER STORIES -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-pill">Testimonials</div>
+      <h2>Loved by Delivery Teams Worldwide</h2>
+      <p>Hear what our customers have to say about their experience with InstaDispatch.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card reveal">
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+        </div>
+        <p class="t-text">"InstaDispatch completely transformed how we manage our daily deliveries. We cut our dispatch time by 60% and our drivers love the mobile app. Best investment we made this year."</p>
+        <div class="t-author">
+          <img src="https://i.pravatar.cc/100?img=12" alt="James Mitchell" loading="lazy">
+          <div class="t-info">
+            <div class="t-name">James Mitchell</div>
+            <div class="t-role">Operations Director, FastCourier UK</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card reveal featured">
+        <div class="t-badge">Most Loved</div>
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+        </div>
+        <p class="t-text">"We scaled from 200 to over 5,000 daily deliveries without any technical issues. The route optimization alone saves us thousands every month in fuel costs. Highly recommended for growing businesses."</p>
+        <div class="t-author">
+          <img src="https://i.pravatar.cc/100?img=47" alt="Sarah Thompson" loading="lazy">
+          <div class="t-info">
+            <div class="t-name">Sarah Thompson</div>
+            <div class="t-role">CEO, Hitra Pošta Slovenia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card reveal">
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ffb347"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/></svg>
+        </div>
+        <p class="t-text">"The customer support is incredible. They helped us migrate from our old system in just 2 days. The ePOD feature has reduced delivery disputes by 80%. Genuinely a game changer for our team."</p>
+        <div class="t-author">
+          <img src="https://i.pravatar.cc/100?img=33" alt="Michael Anderson" loading="lazy">
+          <div class="t-info">
+            <div class="t-name">Michael Anderson</div>
+            <div class="t-role">Logistics Manager, RapidWheels</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Stats Bar -->
+    <div class="t-bottom-bar reveal">
+      <div class="t-stat">
+        <div class="t-stat-num">4.8/5</div>
+        <div class="t-stat-label">Average Rating</div>
+      </div>
+      <div class="t-divider"></div>
+      <div class="t-stat">
+        <div class="t-stat-num">500+</div>
+        <div class="t-stat-label">Happy Customers</div>
+      </div>
+      <div class="t-divider"></div>
+      <div class="t-stat">
+        <div class="t-stat-num">98%</div>
+        <div class="t-stat-label">Would Recommend</div>
+      </div>
+      <div class="t-divider"></div>
+      <div class="t-stat">
+        <div class="t-stat-num">24/7</div>
+        <div class="t-stat-label">Support Available</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
